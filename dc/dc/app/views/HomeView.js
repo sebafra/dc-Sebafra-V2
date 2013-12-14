@@ -2,18 +2,18 @@ templates.homeView = "app/views/HomeView.html";
 
 window.HomeView = Backbone.View.extend({
 
-    title: "Home",
+    title: "Jes&uacute;s Mar&iacute;a en tu mano",
     destructionPolicy:'never',
 
     initialize: function(options) {
         this.render();
         this.view = this.$el;
-    },  
-    
+    },
+
     events:{
         "click .back1":"loadAttractions"
     },
-    
+
     render:function (eventName) {
         var template = _.template(templates.homeView);
         var model = {isTablet:NativeUtil.isTablet()};

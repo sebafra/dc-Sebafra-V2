@@ -94,8 +94,8 @@ body {
 .data-list-lightweight li.listSelected,
 .data-list li.listSelected {
 	color:#FFF;
-	border-top:1px solid #094C99;
-	background-color: #00698C;
+	border-top:1px solid #77AF28;
+	background-color: #77AF28;
     font-weight: bold;
     background-image:url('images/more_disclosure_white.png');
 }
@@ -277,7 +277,7 @@ body {
 }
 
 .searchGraphic {
-    background: url('images/search_big.png') no-repeat;
+    background: url('images/logomuni.png') no-repeat;
     width:325px;
     height:325px;
     position:absolute;
@@ -531,17 +531,18 @@ li.listSelected .ratingStar {
 .homeButton .icon{
 	font-size: 3em;
 	color: #fff;
-	margin-top: .5em;
+	margin-top: .8em;
 }
 .homeButton p{
 	/*-webkit-backface-visibility: hidden;*/
 	color: #FFFFFF;
+    font-weight: bold;
 }
 .container .homeButton:first-child p{
 	/*-webkit-backface-visibility: hidden;*/
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #FFFFFF;
-	width: 90%;
+    padding: 0 1em;
 }
 .img{
 	padding: 0;
@@ -556,30 +557,6 @@ li.listSelected .ratingStar {
 .featured{
 	background-color: #f6f6f6!important;
 }
-/*.barContainer {
-	width: 100%;
-	background: #f3f3f3;
-	height: 5em;
-	padding-left: 1em;
-	padding-top: .5em;
-	text-align: left;
-	color: #555;
-}*/
-/*.barText{
-	display: inline-block;
-	width: 69%;
-}*/
-/*.barButton{
-	display: inline-block;
-	width: 29%;
-	font-size: 2.5em;
-	height: 100%;
-	vertical-align: middle;
-	text-align: center;
-}*/
-/*.barButton a{
-	margin-right: .4em;
-}*/
 .barTitle{
 	display: block;
 	font-size: 1.3em;
