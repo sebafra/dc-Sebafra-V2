@@ -239,25 +239,14 @@ body {
     padding:0.5em;
 }
 
-.searchBackground {
+/* Load View Search */
+
+/*.searchBackground {
     height:100%;
     width:100%;
-}
-
-
-/*@media screen and (max-device-width : 767px) {
-    .searchBackground {
-        background: url('images/background_480.jpg');
-    }
-}
-
-@media screen and (min-device-width : 768px) {
-    .searchBackground {
-        background: url('images/background_1024.jpg');
-    }
 }*/
 
-.searchBGOverlay {
+/*.searchBGOverlay {
     margin: 0px;
     top:0px;
     left:0px;
@@ -283,6 +272,15 @@ body {
     position:absolute;
     margin-left:-160px;
     margin-top: -215px;
+}*/
+.loadItems{
+    padding: 5em !important;
+}
+.loadItems .progress{
+    margin-top: 5em;
+}
+.loadItems .progress-bar{
+    background-color: #77AF28;
 }
 
 .searchGraphic .activityIndicator {
@@ -291,6 +289,7 @@ body {
     left: 174px;
 }
 
+/* End Load View Search */
 
 .header {
     background: url('images/lettuce.jpg') no-repeat;
@@ -476,25 +475,6 @@ li.listSelected .ratingStar {
   background: #fff;
 }
 
-/*Swipe*/
-
-
-.swipe {
- 	overflow: hidden;
- 	/*visibility: hidden;*/
- 	position: relative;
-}
-.swipe-wrap {
- 	overflow: hidden;
- 	position: relative;
-}
-.swipe-wrap > div {
- 	float:left;
- 	width:100%;
- 	position: relative;
-}
-
-
 
 /* Propios */
 
@@ -621,7 +601,8 @@ li.listSelected .ratingStar {
     text-align: right;
 }
 .itemWell .barButtons .icon{
-    font-size: 1.5em;
+    font-size: 2em;
+    width: .5em;
 }
 
 @media screen and (min-device-width : 768px) {

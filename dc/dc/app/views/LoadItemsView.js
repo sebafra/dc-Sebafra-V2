@@ -14,7 +14,7 @@ window.LoadItemsView = Backbone.View.extend({
         this.onLoadItemsResult = function(result){
             self.loadItemsResult(result);
         };
-        
+
         this.onLoadItemsError = function(error){
             self.loadItemsError(error);
         };
