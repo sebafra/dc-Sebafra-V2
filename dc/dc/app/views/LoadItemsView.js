@@ -34,18 +34,25 @@ window.LoadItemsView = Backbone.View.extend({
     },
 
     loadItemsResult: function(result) {
-        console.log(result);
 
-        try {
-            var jsonResult = JSON.parse(result);
-            var view = new ListView({ model:jsonResult });
-            //window.viewNavigator.pushView( view );
-            //window.viewNavigator.replaceView( view );
+    	var type = ModelManager.getDefinition(result.type);
+    	if( type.adScreen == undefined){
+        	var view = new ListView({ model:result });
             window.ViewNavigatorUtil.replaceView( view );
-        }
-        catch(e){
-            alert(e.toString());
-        }
+    	} else {
+    		App.getNextAdScreen(
+    			function(adScreen){
+    				var adScreenFileName = App.getImagePath(ModelManager.type.adScreen, adScreen.fileName);
+    	        	var view = new ListView({ model:result, adScreenFileName:adScreenFileName });
+    	            window.ViewNavigatorUtil.replaceView( view );
+    			},
+    			function(){
+    	        	var view = new ListView({ model:result });
+    	            window.ViewNavigatorUtil.replaceView( view );
+    			}
+    		);
+    	}
+
     },
 
     loadItemsError: function(error) {

@@ -625,3 +625,12 @@ li.listSelected .ratingStar {
 	}
 }
 
+.adScreen{
+	left: 5%;
+	top: 5%;
+	width: 90%;
+	height: 90%;
+	background: red;
+	z-index: 100;
+	position: absolute;
+}

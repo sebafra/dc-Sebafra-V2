@@ -10,6 +10,8 @@ window.ListView = Backbone.View.extend({
 
         this.model = options.model;
 
+        this.adScreenFileName = options.adScreenFileName;
+
         this.title = this.model.labelPlural;
         
         this.render();
@@ -23,7 +25,7 @@ window.ListView = Backbone.View.extend({
     render:function (eventName) {
         var template = _.template(templates.list);
         this.$el.css("background", "white");
-        this.$el.html(template( {labelPlural:this.model.labelPlural, items:this.model.items} ));        
+        this.$el.html(template( {labelPlural:this.model.labelPlural, items:this.model.items, adScreenFileName: this.adScreenFileName} ));        
         var $list = this.$el.find("#list");
 
         _.each(this.model.items, function (item) {
