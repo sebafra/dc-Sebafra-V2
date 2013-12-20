@@ -8,8 +8,8 @@ window.ModelManager = {
 				url:"/getHotels",
 				fileName:"hotel.json",
 				folderName:"hotel"
-		}, 
-		
+		},
+
 		restaurant:{
 				code:"restaurant",
 				url:"/getRestaurants",
@@ -17,14 +17,14 @@ window.ModelManager = {
 				folderName:"restaurant"
 
 		},
-		
+
 		adScreen:{
 			code:"adScreen",
 			url:"/getAdScreens",
 			fileName:"adScreen.json",
 			folderName:"adScreen"
 		},
-	
+
 		attraction:{
 				code:"attraction",
 				url:"/getAttractions",
@@ -36,7 +36,7 @@ window.ModelManager = {
 
 	setup:{
 		hotel:{
-	            items: [	
+	            items: [
 	                     {"name":"hotel 1","id":"1"}
 		           		,{"name":"hotel 2","id":"2"}
 		           		,{"name":"hotel 3","id":"3"}
@@ -45,9 +45,9 @@ window.ModelManager = {
 	           labelPlural: "Hoteles",
 	           labelSingular: "Hotel",
 	           type: "hotel"
-		}, 
+		},
 		attraction:{
-            items: [	
+            items: [
                      {
                     	 "type":"attraction",
                     	 "name":"Estancias Jesuiticas",
@@ -63,7 +63,7 @@ window.ModelManager = {
                     	 "image2":"estancia2.jpg",
                     	 "image3":"estancia3.jpg",
                     	 "image4":"estancia4.jpg"
-                    	 
+
                      }
 	           		,
 	           		{
@@ -91,8 +91,8 @@ window.ModelManager = {
 	                	"latitude":"-30.970447",
 	                	"longitud":"-64.097558",
                    	 	"description":"La Estancia de Jesus Maria se encuentra cuatro kilometros al norte de la Estancia de La Caroya, siguiendo siempre por la Ruta Nacional 9 en la provincia de Cordoba. Su ubicacion no es fortuita: por alli pasaba el camino real hacia la capital del Virreinato. En sus tierras se origino la actual ciudad cordobesa de ciudad de Jesus Maria.</p><p>En 1618, los jesuitas adquirieron por ocho mil pesos, las 20 mil cepas de vinas, el molino, 250 vacas, 25 bueyes y 30 cerdos de la Chacra de Guanusacate, nombre con el que designaban a esas tierras los indigenas sanavirones.</p><p>En 1620, rebautizada con su actual nombre cristiano, este segundo emprendimiento productivo de la Compania de Jesus concentraba a los aborigenes que eran asalariados y a cerca de trescientos esclavos, comprados en el puerto de Buenos Aires, que llevaban la mayor carga de trabajo. Como era de esperar, en la finca no s&oacute;lo se hablaba el latin, el espanol y el italiano, sino tambien las lenguas aborigenes y africanas.</p> <p>Mitad monasterio y mitad factoria, los ranchos destinados a los indios y a los esclavos, fueron cambiando por las construcciones de ladrillo, piedra y teja, caracteristicas de la Orden. El patio central cerrado en dos costados por un claustro de dos niveles, las amplias galerias, los arcos de medio punto, cierran el estilo propio de la Compania. La iglesia, de fachada sobria y nave unica abovedada, muestra en su interior una importante cupula central ornamentada con relieves que denotan las manos de los artistas aborigenes. Junto a la sacristia, la elegante espadana de piedra completa la arquitectura de la finca.",
-                   	 	"scheduleOfAttentionWeek":"De martes a viernes: de 8 a 19",
-                   	 	"scheduleOfAttentionWeekend":"Sabados y domingos: de 10 a 12 y de 14 a 19",
+                   	 	"scheduleOfAttentionWeek":"no definido",
+                   	 	"scheduleOfAttentionWeekend":"",
                    	 	"image1":"estancia1.jpg",
                    	 	"image2":"estancia2.jpg"
 	           		}
@@ -162,9 +162,9 @@ window.ModelManager = {
            labelPlural: "Atracciones",
            labelSingular: "Atraccion",
            type: "attraction"
-		}, 
+		},
 		adScreen:{
-            items: [	
+            items: [
                      {name:"adScreen1",id:"1", fileName:"3-fernet-listo2.png"}
 	           		,{name:"adScreen2",id:"2", fileName:"12.png"}
 	           		,{name:"adScreen3",id:"3", fileName:"23.png"}
@@ -173,9 +173,9 @@ window.ModelManager = {
            labelPlural: "Publicidades de Pantall",
            labelSingular: "Publicidad de pantalla",
            type: "adScreen"
-		}, 
+		},
 		restaurant:{
-	            items: [	
+	            items: [
 	                     {"name":"rest 1","id":"1"}
 		           		,{"name":"rest 2","id":"2"}
 		           		,{"name":"rest 3","id":"3"}
@@ -186,7 +186,7 @@ window.ModelManager = {
 	           type: "restaurant"
 		}
 	},
-    
+
 	getDefinition:function (type) {
 
     	if(type == this.type.restaurant.code){
@@ -198,7 +198,7 @@ window.ModelManager = {
     	} else if(type == this.type.adScreen.code){
     		return this.type.adScreen;
     	}
-    	
+
     	return;
     },
 
@@ -213,13 +213,13 @@ window.ModelManager = {
     	} else if(type == this.type.adScreen.code){
     		return this.setup.adScreen;
     	}
-    	
+
     	return;
     },
 
 	urlBase:"http://www.diproach.com/api/dc",
 	//urlBase:"http://localhost:8888/api/dc",
-	
+
     getAll:function (type, successCallback, errorCallback) {
 
 		var definition = this.getDefinition(type);
@@ -230,13 +230,13 @@ window.ModelManager = {
     		successCallback(setup);
     	} else {
     		JSonUtil.read(definition.fileName, successCallback, errorCallback);
-    	} 
-    	
+    	}
+
     },
 
-    
+
     getById:function (id, collection) {
-		
+
 		for (var x=0; x < collection.length; x++) {
             var item = collection[x];
             if (item.id == id){
@@ -245,56 +245,56 @@ window.ModelManager = {
         }
         return null;
     },
-    
+
     updateAll:function(){
     	if(App.isEnvironmentWeb()) return;
-    	
+
     	_.each(this.type, function (item) {
         	this.update(item);
-        }, this);    	
+        }, this);
     },
-    
+
     update:function(item){
 
     	var setup = this.getSetup(item.code);
-    	
-    	JSonUtil.exists(item.fileName, 
+
+    	JSonUtil.exists(item.fileName,
 			function(){
     			// If exists update from server
 				ModelManager.updateFromServer(item);
-			}, 
+			},
 			function(){
 
-				// If not exist create file with setup values 
-				JSonUtil.save(item.fileName, setup,	
+				// If not exist create file with setup values
+				JSonUtil.save(item.fileName, setup,
 					function(){
 
 
 						// If file was created we must try update from server
 						ModelManager.updateFromServer(item);
-						
-					}, 
+
+					},
 					function(){}
 				);
-			}, 
-			function(){} 
+			},
+			function(){}
 		);
     },
-    
+
     updateFromServer:function(definition){
 
 		var loadUrl = this.urlBase + definition.url;
-        
+
 		$.getJSON(loadUrl, function(result) {
 
 
 			var jsonString = JSON.stringify(result.data);
         	JSonUtil.save(definition.fileName, jsonString, function(){}, function(){} );
-			
+
 		  }).error(function(result) {
 		  });
 
     }
-    
-    
+
+
 };
