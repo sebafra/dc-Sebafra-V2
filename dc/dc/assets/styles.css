@@ -19,7 +19,7 @@ body {
 	overflow: hidden;
 	padding: 0px;
 	margin: 0px;
-	background-color:#555;
+	background-color:#FFF;
 }
 .subtext {
     font-size:0.85em;
@@ -37,7 +37,6 @@ body {
 	position:relative;
 	background-color: #FFF;
 	min-height:100%;
-
 	padding:0;
 	margin:0;
 	        /*
@@ -82,7 +81,7 @@ body {
 	padding-left:1em;
 	padding-right:1px;
 	display:block;
-	border-top:1px solid #CCC;
+	border-top:1px solid #999;
 	border-bottom:none;
     background-color: white;
 
@@ -636,6 +635,28 @@ li.listSelected .ratingStar {
 		height: 5em;
 		vertical-align: middle;
 	}
+}
+@media (min-width: 768px){}
+.container {
+    width: 100%;
+}
+.swiper-container {
+  height: 30em;
+}
+.data-list li {
+    font-size: 1.3em;
+    padding:2em;
+}
+.btn-sm{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.homeButton p{
+    font-size: 1.4em;
+}
+.container .homeButton:first-child p{
+    font-size: 1.4em;
+    padding: 0;
 }
 
 .adScreen{
