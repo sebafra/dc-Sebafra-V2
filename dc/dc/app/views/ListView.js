@@ -36,6 +36,26 @@ window.ListView = Backbone.View.extend({
     },
     
     listItemClick: function( event ) {
+        
+        this.$el.find( "li" ).removeClass( "listSelected" );
+        var target = $( event.target );
+        while (target.get(0).nodeName.toUpperCase() != "LI") {
+            target=target.parent();
+        }
+        
+        target.addClass( "listSelected" );
+        var id = target.attr( "id" );
+        var item = ModelManager.getById( id, this.model.items );
+        //console.log( poi );
+        
+    	var view = new LoadItemView({model:item, labelSingular:this.model.labelSingular});
+
+//    	var view = new ItemView({model:item, labelSingular:this.model.labelSingular});
+        window.ViewNavigatorUtil.pushView( view );
+        
+        
+    },
+    listItemClickOld: function( event ) {
         //console.log(event);
         
         this.$el.find( "li" ).removeClass( "listSelected" );

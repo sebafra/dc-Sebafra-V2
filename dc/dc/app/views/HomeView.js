@@ -25,6 +25,7 @@ window.HomeView = Backbone.View.extend({
 
     loadAttractions:function () {
     	var view = new LoadItemsView({type:ModelManager.type.attraction.code});
-    	window.viewNavigator.pushView( view );
+    	//window.viewNavigator.pushView( view );
+    	ViewNavigatorUtil.pushView( view );
     }
 });
