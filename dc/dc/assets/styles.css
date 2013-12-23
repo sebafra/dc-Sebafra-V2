@@ -656,6 +656,9 @@ body {
     font-size: 1.6em !important;
     padding: 0 !important;
     }
+    .homeButton:first-child{
+    height: 25em !important;
+    }
 }
 
 .adScreen{
