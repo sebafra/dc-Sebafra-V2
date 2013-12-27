@@ -1,4 +1,5 @@
 templates.itemView = "app/views/ItemView.html";
+templates.itemViewExtend = "app/views/ItemViewExtend.html";
 
 window.ItemView = Backbone.View.extend({
 
@@ -14,7 +15,11 @@ window.ItemView = Backbone.View.extend({
 
         this.title = options.labelSingular;
 
-        this.template = _.template( templates.itemView ),
+        if (options.model.type==ModelManager.type.hotel.code) {
+            this.template = _.template( templates.itemViewExtend );
+        } else {
+            this.template = _.template( templates.itemView );
+        };
         this.render();
         this.view = this.$el;
     },

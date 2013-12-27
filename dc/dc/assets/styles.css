@@ -77,26 +77,25 @@ body {
 .data-list li {
     cursor:pointer;
     font-size:1em;
-    padding:1em;
+    /*padding:1em;
     padding-left:1em;
-    padding-right:1px;
+    padding-right:1px;*/
     display:block;
-    border-top:1px solid #999;
+    /*border-top:1px solid #999;
     border-bottom:none;
     background-color: white;
-
-    background-image:url('images/more_disclosure.png');
+    background-image: none !important;
     background-position:right center;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat;*/
 }
-
+/*TODO: Modificar esto y pasarlo al div del LI*/
 .data-list-lightweight li.listSelected,
 .data-list li.listSelected {
 	color:#FFF;
 	border-top:1px solid #77AF28;
 	background-color: #77AF28;
     font-weight: bold;
-    background-image:url('images/more_disclosure_white.png');
+    /*background-image:url('images/more_disclosure_white.png');*/
 }
 
 
@@ -474,9 +473,13 @@ body {
   background: #fff;
 }
 
+/***********************/
+/******* Propios *******/
+/***********************/
 
-/* Propios */
-
+a{
+    color: inherit;
+}
 #slider{
 	height: 15em;
 }
@@ -540,7 +543,7 @@ body {
     /*-webkit-backface-visibility: hidden;*/
     font-size: 1.2em;
     color: #FFFFFF;
-    padding: 0 1em;
+/*    padding: 0 1em;*/
 }
 .back1{
     background-image:url('images/imagen1.jpg');
@@ -607,6 +610,7 @@ body {
     background-color: #f5f5f5;
     text-align: left;
     padding: 10px;
+    margin-bottom: 0;
 }
 .itemWell{
     background-color: #f5f5f5;
@@ -619,7 +623,60 @@ body {
     font-size: 2em;
     width: .5em;
 }
+/*Estilos de itemView de hoteles y gastronomia*/
 
+.itemType{
+    font-size: .9em;
+    font-style: italic;
+}
+.itemSecondLine{
+    font-size: .8em;
+    color: #555;
+}
+.itemSecondLine .itemData{
+    margin-right: .2em;
+}
+.itemFeatured {
+
+    background-image:url('images/more_disclosure.png') !important ;
+    background-color: yellow;
+}
+.liContainer {
+    padding:1em;
+    padding-left:1em;
+    padding-right:1px;
+    border-top:1px solid #999;
+    border-bottom:none;
+    width: 100%;
+}
+.liContainerNormal {
+    background-image:url('images/more_disclosure.png');
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+.liContainerExtended {
+    background-image:none;
+}
+.liContainerFeatured {
+    background-image:url('images/more_disclosure_white.png');
+    background-position:right center;
+    background-repeat:no-repeat;
+    background-color: #77AF28;
+    color: #FFF;
+    margin: 0;
+}
+.liContainerFeatured .itemSecondLine{
+    color: #FFF;
+}
+.featuredListImage {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.featuredListImage img {
+    width: 100%;
+}
+
+/*Estilos para Tablet Portrait*/
 @media screen and (min-device-width : 768px) {
     body{
     	font-size: 16px;

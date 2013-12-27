@@ -5,7 +5,7 @@ window.ListView = Backbone.View.extend({
     destructionPolicy:'never',
     title: "List",
     backLabel: "Volver",
-    
+
     initialize: function(options) {
 
         this.model = options.model;
@@ -13,64 +13,64 @@ window.ListView = Backbone.View.extend({
         this.adScreenFileName = options.adScreenFileName;
 
         this.title = this.model.labelPlural;
-        
+
         this.render();
         this.view = this.$el;
-    },  
-    
+    },
+
     events:{
         "click li":"listItemClick"
     },
-    
+
     render:function (eventName) {
         var template = _.template(templates.list);
         this.$el.css("background", "white");
-        this.$el.html(template( {labelPlural:this.model.labelPlural, items:this.model.items, adScreenFileName: this.adScreenFileName} ));        
+        this.$el.html(template( {labelPlural:this.model.labelPlural, items:this.model.items, adScreenFileName: this.adScreenFileName} ));
         var $list = this.$el.find("#list");
 
         _.each(this.model.items, function (item) {
             $list.append(new ListItemView({model:item}).render().el);
         }, this);
-        
+
         return this;
     },
-    
+
     listItemClick: function( event ) {
-        
+
         this.$el.find( "li" ).removeClass( "listSelected" );
         var target = $( event.target );
         while (target.get(0).nodeName.toUpperCase() != "LI") {
             target=target.parent();
         }
-        
+
         target.addClass( "listSelected" );
         var id = target.attr( "id" );
         var item = ModelManager.getById( id, this.model.items );
         //console.log( poi );
-        
-    	var view = new LoadItemView({model:item, labelSingular:this.model.labelSingular});
+        //Detectamos si el item tiene vista ampliada, sino no tiene click
+        if (item.extendedView!=undefined && item.extendedView=="true") {
+           var view = new LoadItemView({model:item, labelSingular:this.model.labelSingular});
+           // var view = new ItemView({model:item, labelSingular:this.model.labelSingular});
+           window.ViewNavigatorUtil.pushView( view );
+        };
 
-//    	var view = new ItemView({model:item, labelSingular:this.model.labelSingular});
-        window.ViewNavigatorUtil.pushView( view );
-        
-        
     },
     listItemClickOld: function( event ) {
         //console.log(event);
-        
+
         this.$el.find( "li" ).removeClass( "listSelected" );
         var target = $( event.target );
         while (target.get(0).nodeName.toUpperCase() != "LI") {
             target=target.parent();
         }
-        
+
         target.addClass( "listSelected" );
         var id = target.attr( "id" );
         var item = ModelManager.getById( id, this.model.items );
         //console.log( poi );
-        
+
         var itemView = new ItemView({model:item, labelSingular:this.model.labelSingular});
         window.ViewNavigatorUtil.pushView( itemView );
-        
+
     }
 });
