@@ -1,6 +1,7 @@
 templates.listItemView = "app/views/ListItemView.html";
 templates.listItemViewExtend = "app/views/ListItemViewExtend.html";
 templates.listItemViewFeatured = "app/views/ListItemViewFeatured.html";
+templates.listItemViewCronograma = "app/views/ListItemViewCronograma.html";
 
 window.ListItemView = Backbone.View.extend({
 
@@ -22,6 +23,8 @@ window.ListItemView = Backbone.View.extend({
             this.template = _.template( templates.listItemViewExtend );
         } else if (this.model.listItemViewType=="featured") {
             this.template = _.template( templates.listItemViewFeatured );
+        } else if (this.model.listItemViewType=="cronograma") {
+            this.template = _.template( templates.listItemViewCronograma );
         }
         this.render();
         this.view = this.$el;

@@ -675,6 +675,46 @@ a{
 .featuredListImage img {
     width: 100%;
 }
+.liContainerCronograma {
+    background-image:'none';
+}
+.liContainerCronograma .itemName {
+    font-size: 1.5em;
+}
+.liContainerCronograma .itemData {
+    font-size: 1em;
+    display: block;
+}
+.liContainerCronograma .badge {
+    background-color: #FFF;
+    color: #77AF28;
+    font-size: .8em;
+}
+.liContainerCronograma .itemData button {
+    font-size:.9em;
+    padding: .2em;
+    margin-top: .2em;
+}
+.liContainerCronograma .itemTxt {
+    font-size:.8em;
+    display: block;
+}
+.itemTxt:first-child {
+    margin-top: .3em;
+}
+.liContainerCronograma .panel {
+    padding: .1em;
+    font-size: .9em;
+}
+.liContainerCronograma .row {
+    margin-right:0;
+}
+.liContainerCronograma .itemData span {
+    margin-left: .5em;
+}
+.liContainerCronograma .itemData span:first-child {
+    margin-right: .5em;
+}
 
 /*Estilos para Tablet Portrait*/
 @media screen and (min-device-width : 768px) {

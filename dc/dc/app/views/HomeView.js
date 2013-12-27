@@ -15,7 +15,8 @@ window.HomeView = Backbone.View.extend({
         "click .back2":"loadOtherEvents",
         "click .back4":"loadHotels",
         "click .back5":"loadService",
-        "click .back6":"loadFestival"
+        "click .back6":"loadFestival",
+        "click .back7":"loadRecomendado"
     },
 
     render:function (eventName) {
@@ -49,6 +50,11 @@ window.HomeView = Backbone.View.extend({
     },
     loadFestival:function () {
         var view = new LoadItemsView({type:ModelManager.type.festival.code});
+        //window.viewNavigator.pushView( view );
+        ViewNavigatorUtil.pushView( view );
+    },
+    loadRecomendado:function () {
+        var view = new LoadItemsView({type:ModelManager.type.cronograma.code});
         //window.viewNavigator.pushView( view );
         ViewNavigatorUtil.pushView( view );
     }

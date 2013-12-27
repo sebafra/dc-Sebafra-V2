@@ -44,6 +44,13 @@ window.ModelManager = {
 			folderName:"festival"
 
 		},
+		cronograma:{
+			code:"cronograma",
+			url:"/getCronograma",
+			fileName:"cronograma.json",
+			folderName:"cronograma"
+
+		},
 		attraction:{
 			code:"attraction",
 			url:"/getAttractions",
@@ -385,6 +392,47 @@ window.ModelManager = {
 			labelSingular: "Festival",
 			type: "festival"
 		}
+		,
+		cronograma:{
+			items: [
+			{
+				"type":"cronograma",
+				"name":"Viernes 10",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
+				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
+				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Viernes 10",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
+				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
+				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Viernes 10",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
+				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
+				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+			}
+			],
+			labelPlural: "Cronograma",
+			labelSingular: "Cronograma",
+			type: "cronograma"
+		}
+
 	},
 
 	getDefinition:function (type) {
@@ -403,6 +451,8 @@ window.ModelManager = {
 			return this.type.service;
 		} else if(type == this.type.festival.code){
 			return this.type.festival;
+		} else if(type == this.type.cronograma.code){
+			return this.type.cronograma;
 		}
 
 		return;
@@ -424,6 +474,8 @@ window.ModelManager = {
 			return this.setup.service;
 		} else if(type == this.type.festival.code){
 			return this.setup.festival;
+		} else if(type == this.type.cronograma.code){
+			return this.setup.cronograma;
 		}
 
 		return;
