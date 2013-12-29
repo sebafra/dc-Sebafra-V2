@@ -675,8 +675,21 @@ a{
 .featuredListImage img {
     width: 100%;
 }
+
+/********************************/
+/* Cronograma View */
+/********************************/
+
 .liContainerCronograma {
     background-image:'none';
+    padding: 0 1em;
+    padding-right: 1px
+}
+.liContainerCronograma .itemFirstLine {
+    margin-bottom: .5em;
+    background-color: #77AF28;
+    /*background-color: #f0f0f0;*/
+    color: #fff;
 }
 .liContainerCronograma .itemName {
     font-size: 1.5em;
@@ -685,15 +698,30 @@ a{
     font-size: 1em;
     display: block;
 }
-.liContainerCronograma .badge {
+.liContainerCronograma .artists {
+    color: #999;
+}
+.liContainerCronograma .scheduleFooter {
+    text-align: right;
+    font-style: italic;
+    color: #555;
+    font-size: .7em;
+    background-color: #f0f0f0;
+/*    height: 2em;*/
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+}
+/*.liContainerCronograma .badge {
     background-color: #FFF;
     color: #77AF28;
     font-size: .8em;
-}
+}*/
 .liContainerCronograma .itemData button {
     font-size:.9em;
     padding: .2em;
     margin-top: .2em;
+    color: #999;
 }
 .liContainerCronograma .itemTxt {
     font-size:.8em;
@@ -716,7 +744,10 @@ a{
     margin-right: .5em;
 }
 
-/*Estilos para Tablet Portrait*/
+/********************************/
+/* Tablet Portrait */
+/********************************/
+
 @media screen and (min-device-width : 768px) {
     body{
     	font-size: 16px;
