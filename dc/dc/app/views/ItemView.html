@@ -2,8 +2,15 @@
 <div class="row">
     <div class="col-xs-12">
       <div class="btn-group btn-group-justified">
-        <a class="btn btn-default active" role="button">Espa&ntilde;ol</a>
-        <a class="btn btn-default" role="button">Ingl&eacute;s</a>
+      	
+      	<% if (App.isLanguageSpanish()){ %>
+        <a id="btn-language-es" class="btn btn-default active" role="button">Espa&ntilde;ol</a>
+        <a id="btn-language-en" class="btn btn-default" role="button">Ingl&eacute;s</a>
+        <% } else {%>
+        <a id="btn-language-es" class="btn btn-default" role="button">Espa&ntilde;ol</a>
+        <a id="btn-language-en" class="btn btn-default active" role="button">Ingl&eacute;s</a>
+        <% } %>
+        
       </div>
     </div>
   </div>
@@ -51,7 +58,7 @@
   </div>
 </div>
 <div class="itemDescription">
-  <p><%= model.description %></p>
+  <p><%= App.translate(model, "description") %></p>
 </div>
 <div class="row">
 
