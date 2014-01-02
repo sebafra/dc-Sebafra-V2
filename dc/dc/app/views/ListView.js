@@ -48,12 +48,19 @@ window.ListView = Backbone.View.extend({
         var item = ModelManager.getById( id, this.model.items );
         //console.log( poi );
         //Detectamos si el item tiene vista ampliada, sino no tiene click
-        if (item.extendedView!=undefined && item.extendedView=="true") {
+        if (item.listItemViewType!=undefined && item.listItemViewType=="list"){
+            var view = new LoadItemsView({type:item.listCode});
+            //window.viewNavigator.pushView( view );
+            ViewNavigatorUtil.pushView( view );
+        } else if (item.extendedView!=undefined && item.extendedView=="true") {
            var view = new LoadItemView({model:item, labelSingular:this.model.labelSingular});
            // var view = new ItemView({model:item, labelSingular:this.model.labelSingular});
            window.ViewNavigatorUtil.pushView( view );
-        };
+        }  
 
+        
+
+    	
     },
     listItemClickOld: function( event ) {
         //console.log(event);

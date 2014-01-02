@@ -72,7 +72,8 @@ window.ModelManager = {
 				"listItemViewType":"featured",
 				"address":"Av. del Trabajo 2811",
 				"phoneNumber":"352545896",
-				"image1":"image1.jpg",
+				"image1":"image1.jpg"
+			
 			}
 			,
 			{
@@ -373,7 +374,8 @@ window.ModelManager = {
 				"name":"Cronograma 2014",
 				"id":"2",
 				"extendedView":"true",
-				"listItemViewType":"simple",
+				"listItemViewType":"list",
+				"listCode":"cronograma",
 				"address":"Av. del Trabajo 2811",
 				"phoneNumber":"352545896"
 			}

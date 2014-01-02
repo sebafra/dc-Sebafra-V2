@@ -19,6 +19,8 @@ window.ListItemView = Backbone.View.extend({
             this.template = _.template( templates.listItemView );
         } else if (this.model.listItemViewType=="simple") {
             this.template = _.template( templates.listItemView );
+        } else if (this.model.listItemViewType=="list") {
+            this.template = _.template( templates.listItemView );
        } else if (this.model.listItemViewType=="extended") {
             this.template = _.template( templates.listItemViewExtend );
         } else if (this.model.listItemViewType=="featured") {
