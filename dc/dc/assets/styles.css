@@ -654,7 +654,7 @@ a{
     background-position:right center;
     background-repeat:no-repeat;
 }
-.liContainerExtended {
+.liContainerExtended .liContainerTempAccom {
     background-image:none;
 }
 .liContainerFeatured {
@@ -675,9 +675,12 @@ a{
 .featuredListImage img {
     width: 100%;
 }
+.liContainerTempAccom .itemFirstLine span{
+    margin-left: 1em;
+}
 
 /********************************/
-/* Cronograma View */
+/****** Cronograma View *********/
 /********************************/
 
 .liContainerCronograma {

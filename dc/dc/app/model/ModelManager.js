@@ -51,6 +51,12 @@ window.ModelManager = {
 			folderName:"cronograma"
 
 		},
+		temporaryAccommodation:{
+			code:"temporaryAccommodation",
+			url:"/getTemporaryAccommodation",
+			fileName:"temporaryAccommodation.json",
+			folderName:"temporaryAccommodation"
+		},
 		attraction:{
 			code:"attraction",
 			url:"/getAttractions",
@@ -73,7 +79,7 @@ window.ModelManager = {
 				"address":"Av. del Trabajo 2811",
 				"phoneNumber":"352545896",
 				"image1":"image1.jpg"
-			
+
 			}
 			,
 			{
@@ -188,6 +194,7 @@ window.ModelManager = {
 				"latitude":"-30.970447",
 				"longitud":"-64.097558",
 				"description":"<p>Tierras a orillas del R\u00EDo Guanusacate, tierras de Sanavirones, al pie de las Sierras Chicas, al norte de la C\u00F3rdoba de la Nueva Andaluc\u00EDa fundada por Cabrera. Fueron merced de Don Pedro Deza, encomendero de su Majestad, fueron propiedad de Don Gaspar de Quevedo, fueron vendidas a la Compa\u00F1\u00EDa de Jes\u00FAs en 1618. Los hermanos jesuitas fundaron la Estancia, y la llamaron Jes\u00FAs Mar\u00EDa. Y la hicieron crecer. Trigo y harina, vid y vino, trabajo, aire puro, rezos, sol, indios y curas.</p><p>El Edificio: La construcci\u00F3n se desarrolla en dos plantas. En el ala noroeste, en planta baja, solo tiene galer\u00EDas y en planta alta galer\u00EDa y habitaciones. El parejo muro que contiene al suelo en planta baja, todo en piedra bola entera, es probable que sea la parte  m\u00E1s antigua de la construcci\u00F3n. Los arcos del claustro, de gran solidez, tienen en sus enjutas pintorescos \u00F3culos cuadrifolios y en este sector, a pesar de tener las impostas para las b\u00F3vedas, el techo es plano de tiranter\u00EDa y bovedillas. El ala noreste incluye en planta baja, el amplio local de la vieja bodega y sobre ella, las habitaciones de los sacerdotes. Este es el sector que, seg\u00FAn los documentos, se le atribuye, en forma directa al Hermano Bianchi. La Iglesia es una cl\u00E1sica planta en cruz latina con una nave principal robusta, dividida en tres cuerpos. El transepto est\u00E1 coronado por una gran c\u00FApula sin tambor pero con linterna. La b\u00F3veda es de ca\u00F1\u00F3n corrido con importantes cornisas que rodean toda construcci\u00F3n. El tajamar que remata el parque es una muestra de las magn\u00EDficas obras de infraestructura de la Hermandad.</p><p>La Estancia Jesu\u00EDtica de Jes\u00FAs Mar\u00EDa es parte del Patrimonio de la Humanidad declarado por UNESCO en 2000  junto con todo el complejo de Estancias Jesu\u00EDticas de C\u00F3rdoba. Hoy alberga el Museo Jesu\u00EDtico Nacional, con salas de arte sacro, numism\u00E1tica y pintura, pero tambi\u00E9n los restos de dos molinos, un perchel y las acequias que regaron toda la propiedad.</p>",
+				"description-en":"<p>DESCRIPCION EN INGLES. Tierras a orillas del R\u00EDo Guanusacate, tierras de Sanavirones, al pie de las Sierras Chicas, al norte de la C\u00F3rdoba de la Nueva Andaluc\u00EDa fundada por Cabrera. Fueron merced de Don Pedro Deza, encomendero de su Majestad, fueron propiedad de Don Gaspar de Quevedo, fueron vendidas a la Compa\u00F1\u00EDa de Jes\u00FAs en 1618. Los hermanos jesuitas fundaron la Estancia, y la llamaron Jes\u00FAs Mar\u00EDa. Y la hicieron crecer. Trigo y harina, vid y vino, trabajo, aire puro, rezos, sol, indios y curas.</p><p>El Edificio: La construcci\u00F3n se desarrolla en dos plantas. En el ala noroeste, en planta baja, solo tiene galer\u00EDas y en planta alta galer\u00EDa y habitaciones. El parejo muro que contiene al suelo en planta baja, todo en piedra bola entera, es probable que sea la parte  m\u00E1s antigua de la construcci\u00F3n. Los arcos del claustro, de gran solidez, tienen en sus enjutas pintorescos \u00F3culos cuadrifolios y en este sector, a pesar de tener las impostas para las b\u00F3vedas, el techo es plano de tiranter\u00EDa y bovedillas. El ala noreste incluye en planta baja, el amplio local de la vieja bodega y sobre ella, las habitaciones de los sacerdotes. Este es el sector que, seg\u00FAn los documentos, se le atribuye, en forma directa al Hermano Bianchi. La Iglesia es una cl\u00E1sica planta en cruz latina con una nave principal robusta, dividida en tres cuerpos. El transepto est\u00E1 coronado por una gran c\u00FApula sin tambor pero con linterna. La b\u00F3veda es de ca\u00F1\u00F3n corrido con importantes cornisas que rodean toda construcci\u00F3n. El tajamar que remata el parque es una muestra de las magn\u00EDficas obras de infraestructura de la Hermandad.</p><p>La Estancia Jesu\u00EDtica de Jes\u00FAs Mar\u00EDa es parte del Patrimonio de la Humanidad declarado por UNESCO en 2000  junto con todo el complejo de Estancias Jesu\u00EDticas de C\u00F3rdoba. Hoy alberga el Museo Jesu\u00EDtico Nacional, con salas de arte sacro, numism\u00E1tica y pintura, pero tambi\u00E9n los restos de dos molinos, un perchel y las acequias que regaron toda la propiedad.</p>",
 				"scheduleOfAttentionWeek":"De martes a viernes: de 8 a 19",
 				"scheduleOfAttentionWeekend":"S\u00E1bados y domingos: de 10 a 12 y de 14 a 19",
 				"image1":"estancia1.jpg",
@@ -385,7 +392,8 @@ window.ModelManager = {
 				"name":"Alojamiento Temporario",
 				"id":"3",
 				"extendedView":"true",
-				"listItemViewType":"simple",
+				"listItemViewType":"list",
+				"listCode":"temporaryAccommodation",
 				"address":"Av. del Trabajo 2811",
 				"phoneNumber":"352545896"
 			}
@@ -434,6 +442,51 @@ window.ModelManager = {
 			labelSingular: "Cronograma",
 			type: "cronograma"
 		}
+		,
+		temporaryAccommodation:{
+			items: [
+			{
+				"type":"temporaryAccommodation",
+				"name":"Beltrame Hugo José",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"temporaryAccommodation",
+				"hotelType":"2 Sgl",
+				"address":"M. Moreno (n) 225",
+				"phoneNumber":"426950",
+				"garage":"true",
+				"additionalInfo":"A compartir / vent. de techo / TV cable / asador"
+			}
+			,
+			{
+				"type":"temporaryAccommodation",
+				"name":"Lloubell Juliana",
+				"id":"2",
+				"extendedView":"false",
+				"listItemViewType":"temporaryAccommodation",
+				"hotelType":"2 Sgl",
+				"address":"España 216",
+				"phoneNumber":"4544479",
+				"celNumber":"15644479",
+				"additionalInfo":"Aquí va información adicional de los alojamientos"
+			}
+			,
+			{
+				"type":"temporaryAccommodation",
+				"name":"Viernes 10",
+				"id":"3",
+				"extendedView":"false",
+				"listItemViewType":"temporaryAccommodation",
+				"hotelType":"Hotel",
+				"address":"Av. del Trabajo 2811",
+				"phoneNumber":"352545896",
+				"additionalInfo":"Aquí va información adicional de los alojamientos"
+			}
+			],
+			labelPlural: "Alojamientos",
+			labelSingular: "Alojamiento",
+			type: "temporaryAccommodation"
+		}
 
 	},
 
@@ -455,6 +508,8 @@ window.ModelManager = {
 			return this.type.festival;
 		} else if(type == this.type.cronograma.code){
 			return this.type.cronograma;
+		} else if(type == this.type.temporaryAccommodation.code){
+			return this.type.temporaryAccommodation;
 		}
 
 		return;
@@ -478,6 +533,8 @@ window.ModelManager = {
 			return this.setup.festival;
 		} else if(type == this.type.cronograma.code){
 			return this.setup.cronograma;
+		} else if(type == this.type.temporaryAccommodation.code){
+			return this.setup.temporaryAccommodation;
 		}
 
 		return;

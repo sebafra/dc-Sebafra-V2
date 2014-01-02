@@ -2,6 +2,7 @@ templates.listItemView = "app/views/ListItemView.html";
 templates.listItemViewExtend = "app/views/ListItemViewExtend.html";
 templates.listItemViewFeatured = "app/views/ListItemViewFeatured.html";
 templates.listItemViewCronograma = "app/views/ListItemViewCronograma.html";
+templates.listItemViewTempAccom = "app/views/ListItemViewTempAccom.html";
 
 window.ListItemView = Backbone.View.extend({
 
@@ -27,6 +28,8 @@ window.ListItemView = Backbone.View.extend({
             this.template = _.template( templates.listItemViewFeatured );
         } else if (this.model.listItemViewType=="cronograma") {
             this.template = _.template( templates.listItemViewCronograma );
+        } else if (this.model.listItemViewType=="temporaryAccommodation") {
+            this.template = _.template( templates.listItemViewTempAccom );
         }
         this.render();
         this.view = this.$el;
