@@ -25,8 +25,25 @@ window.ItemView = Backbone.View.extend({
     },
 
     events:{
+        "click #btn-language-es":"changeLanguageSpanish",
+        "click #btn-language-en":"changeLanguageEnglish"
     },
 
+    changeLanguageSpanish:function () {
+    	App.setLanguageSpanish();
+    	this.reload();
+    },
+    
+    changeLanguageEnglish:function () {
+    	App.setLanguageEnglish();
+    	this.reload();
+    },
+
+    reload:function () {
+        var view = new LoadItemView({model:this.model.model, labelSingular:this.title});
+        window.ViewNavigatorUtil.replaceView( view );
+    },
+    
     render:function (eventName) {
         var model = this.model;
         this.$el.html( this.template( model ));

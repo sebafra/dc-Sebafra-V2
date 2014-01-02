@@ -1,5 +1,3 @@
-
-
 window.App = {
 
 	isEnvironmentWeb:function(){
