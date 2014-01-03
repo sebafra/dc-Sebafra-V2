@@ -1,7 +1,7 @@
 <div class="liContainer liContainerTempAccom">
 <div class="itemFirstLine">
 	<strong class="itemName" id="name"><%= name %></strong>
-	<% if (typeof(garage) !== "undefined"){ %>
+	<% if ((typeof(garage) !== "undefined") && (garage == "true")){ %>
 	<span class="label label-success">Cochera</span>
 	<% } %>
 </div>
@@ -14,10 +14,12 @@
 		<span class="glyphicon glyphicon-map-marker"></span>
 		<%= address %>
 	</span>
+	<% if ((typeof(phoneNumber) !== "undefined") && (phoneNumber !== null)){ %>
 	<span class="itemData">
 		<span class="glyphicon glyphicon-earphone"></span>
 		<a href="tel:<%= phoneNumber %>"><%= phoneNumber %></a>
 	</span>
+	<% } %>
 	<% if (typeof(celNumber) !== "undefined"){ %>
 	<span class="itemData">
 		<span class="glyphicon glyphicon-phone"></span>
@@ -28,7 +30,7 @@
 <div class="itemSecondLine">
 	<span class="itemData">
 		<span class="glyphicon glyphicon-comment"></span>
-		<%= additionalInfo %>
+		<%= aditionalInfo %>
 	</span>
 </div>
 </div>
