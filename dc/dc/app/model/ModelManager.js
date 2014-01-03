@@ -186,6 +186,7 @@ window.ModelManager = {
 			{
 				"type":"attraction",
 				"name":"Estancia Jesu\u00EDtica",
+				"name-en":"Jesuit Estancia of Jesús María",
 				"id":"1",
 				"extendedView":"true",
 				"listItemViewType":"simple",
@@ -207,11 +208,13 @@ window.ModelManager = {
 			{
 				"type":"attraction",
 				"name":"Festival de Doma y Folclore",
+				"name-en":"Festival of Doma and Folclore",
 				"id":"2",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"address":"Cleto Perez y Tucuman",
 				"description":"<p>En mayo de 1965, bajo la imperiosa necesidad de recaudar fondos para solventar la atenci\u00F3n de los ni\u00F1os de las escuelas se propone la idea de realizar un festival de doma. Convencidos de la relevancia que tendr\u00EDa el evento se invita a todas las Cooperadoras de las Escuelas de Jes\u00FAs Mar\u00EDa. Inicialmente se sumaron 10 Cooperadoras, luego se adhirieron otras m\u00E1s hasta conformar la \u0022Uni\u00F3n de Cooperadoras Escolares”. El trabajo de estas voluntades logr\u00F3 llevar adelante con absoluto \u00E9xito el primer festival que se inaugur\u00F3 en enero de 1966. M\u00E1s de 45.000 personas asistieron al evento gaucho. El resultado, una recaudaci\u00F3n que cumpli\u00F3 con creces el objetivo planteado hizo que este sue\u00F1o se convirtiera en el Festival m\u00E1s grande de Am\u00E9rica en su g\u00E9nero, atrayendo en cada edici\u00F3n a m\u00E1s de 400 mil espectadores que viven esta fiesta popular y un sin n\u00FAmero de televidentes y radioescuchas que lo siguen desde sus hogares en todo el pa\u00EDs. Hasta el d\u00EDa de hoy las Cooperadores Escolares siguen llevando adelante el evento y los fondos recaudados se reparten entre las escuelas para sostener la educaci\u00F3n de los ni\u00F1os.</p><p>El principal atractivo es el campeonato de Jineteada, que consiste en un jinete montando un potro que es especialmente preparado a lo largo del a\u00F1o para esta ocasi\u00F3n. Las categor\u00EDas de montas son tres.</p><p>Crina Limpia: En esta categor\u00EDa se puede usar una lonja que va alrededor del pescuezo del animal como \u00FAnico sost\u00E9n fuerte del jinete, qui\u00E9n no puede dejar de trabajar el animal con las espuelas. El tiempo de monta es de 8 segundos.</p><p>La Grupa Sure\u00F1a o Surera: En esta categor\u00EDa no se usan estribos, pero se utiliza un cuero de oveja sujetado por un cinch\u00F3n. El jinete debe sujetar las riendas con una mano y el azote (huasca, talero, etc.) con la otra. El tiempo de monta es de 12 segundos.</p><p>El Basto con Encimera: Aqu\u00ED el hombre no deber\u00E1 perder los estribos ni \u0022charquear\u0022 (tocar al animal con las manos). En las otras categor\u00EDas el charqueo tambi\u00E9n quita puntos. El tiempo de monta es de 15 segundos.</p>",
+				"description-en":"<p>In May 1965, parents of school children, seeing the lack of good political measures in the area of Education, thought of having a Doma Festival as a way of raising funds. These persons invited people from other school boards and together they formed the Union of School Boards. Thanks to them, in January 1966 the first Festival was held. More than 45.000 people attended it, and the objective was amply reached.</p><p>The Festival is now the most important festival of its type in America, attracting every January more than 400 thousand spectators, and great TV and radio audience from all over the country. It is, as always, organized by the Union of School Boards, and the raised funds are divided among the schools to help support the education of our children.</p><p>The main attraction is the horseback riding championship, where a rider tries to stay on the back of the horse for a certain amount of time. The horses are specially bred and kept for this activity.</p><p> There are three categories in the competition: </p><ul><li>Crina Limpia: In this category the rider can only use a strip of leather around the horse´s neck for support, while poking the horse´s belly with his heels. Length of the ride: 8 seconds. </li><li>Grupa Sureña or Surera: In this category no stirrups can be used, although a skin of sheep is tied to the middle of the horse by a leather strip. The rider has to hold it for support with one hand while with the other holds the whip (called “huasca” or “talero”) Length of the ride: 12 seconds.</li><li>Basto con Encimera: In this one the rider must not lose the stirrups or 'charquear' (To touch the animal with the hands) Length of the ride: 15 seconds.</li></ul>",
 				"scheduleOfAttentionWeek":"De martes a domingos y feriados: de 10 a 19",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"festival1.jpg",
@@ -221,10 +224,12 @@ window.ModelManager = {
 			{
 				"type":"attraction",
 				"name":"Estaci\u00F3n de Trenes",
+				"name-en":"Jesus Maria Train Station",
 				"id":"3",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"description":"<p>En 1875 es inaugurado el ferrocarril que une C\u00F3rdoba capital con la localidad santiague\u00F1a de Recreo. La estaci\u00F3n de trenes hace de la ciudad un \u00EDcono importante, como ya lo fuera en la \u00E9poca colonial por estar situada sobre el Camino Real.</p><p>Hoy la Estaci\u00F3n recibe dos trenes de carga semanales y en su explanada se llevan a cabo numerosos espect\u00E1culos art\u00EDsticos de danza, m\u00FAsica, teatro y muestras fotogr\u00E1ficas entre otros.</p>",
+				"description-en":"<p>The train line linking the city of Cordoba with the town of Recreo, in Santiago del Estero, started working in 1875. And the Train Station renewed the importance of the town of Jesus Maria, importance it had had back in colonial times for being on the Royal Road to Alto Peru.</p><p>Nowadays the Station sees two cargo trains a week, and every weekend artistic performances, such as music, dancing, theater and photography, on its terrace.</p>",
 				"scheduleOfAttentionWeek":"",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"estacion1.jpg",
@@ -234,13 +239,15 @@ window.ModelManager = {
 			,
 			{
 				"type":"attraction",
-				"name":"Torre C\u00E9spedes",
+				"name":"Cespedes Tower",
+				"name-en":"",
 				"id":"4",
 				"extendedView":"true",
 				"listItemViewType":"simple",
-				"address":"C\u00E1stulo Pe\u00F1a esq. Col\u00F3n",
-				"phoneNumber":"03525-443773",
+				"address":"Castulo Peña and Colon streets",
+				"phoneNumber":"03525443773",
 				"description":"<p>El edificio data de fines del siglo XIX. Se trataba  de la casa de veraneo de Gabriel C\u00E9spedes y su familia. C\u00E9spedes se desempe\u00F1\u00F3 como intendente de la ciudad entre los a\u00F1os 1914 y 1918. La torre fue construida entre los  a\u00F1os 1896 y 1898. Dise\u00F1ada y dirigida por el Ingeniero y Constructor Pedro Busc\u00E1, un espa\u00F1ol que lleg\u00F3 a la Argentina por pedido de su coterr\u00E1neo Juan BialetMass\u00E9. El castillo parte de una base octogonal central y cuatro torres circulares. Est\u00E1 dividido en dos plantas. En el interior de una de las torres se alza la escalera caracol que conduce a una terraza cuyo per\u00EDmetro es cerrado. Fue declarada de inter\u00E9s Municipal y componente del patrimonio arquitect\u00F3nico y urban\u00EDstico de Jes\u00FAs Mar\u00EDa en el a\u00F1o 1995.</p>",
+				"description-en":"<p>It was the summer residence of the Cespedes family by the end of the 19th century. Mr. Gabriel Cespedes was Major of the City between 1914 and 1918. The tower was designed and built by the Spanish engineer and constructor Pedro Buscá between 1896 and 1898. The base is an octagon with four circular towers attached. A spiral staircase, situated in one of the towers, leads to the second floor and up onto the terrace.</p><p>The tower was declared of Municipal Interest and part of the Architectural Heritage of the City in 1995.</p>",
 				"scheduleOfAttentionWeek":"",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"jesusmaria.jpg"
@@ -249,12 +256,14 @@ window.ModelManager = {
 			{
 				"type":"attraction",
 				"name":"Museo de la Ciudad Luis Biondi",
+				"name-en":"Museum of the City “Luis Biondi",
 				"id":"5",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"address":"Ingeniero Olmos 453",
-				"phoneNumber":"03525-443773",
+				"phoneNumber":"03525443773",
 				"description":"<p>El 27 de Septiembre de 2012 se Inaugura la Sala de Exposiciones en la Antigua Casa Ghersi. Esta Casona de estilo franc\u00E9s de fines de siglo XIX, construida como casa de veraneo, alberga la sala que recibe exposiciones pict\u00F3ricas todos los meses. La restauraci\u00F3n de la casa, en su tramo final, tiene por objeto la instalaci\u00F3n del Museo de la Ciudad que se encuentra en proceso de conformaci\u00F3n.</p>",
+				"description-en":"<p>It was inaugurated on September 27th 2012 in the Old Ghersi House. This place was built in the French style in the late 19th century as a summer home, and it had been practically abandoned of late. The local Municipality started the restoration works with the aim of settling there the Museum of the City. It now holds monthly exhibits of art.</p>",
 				"scheduleOfAttentionWeek":"Jueves a domingos: de 17 a 21",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"museo1.jpg",
@@ -263,11 +272,13 @@ window.ModelManager = {
 			,
 			{
 				"type":"attraction",
-				"name":"Capilla Kronfuss",
+				"name":"Capilla Kronfus",
+				"name-en":"Kronfus Chapel",
 				"id":"6",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"description":"<p>Obra de inspiraci\u00F3n del Barroco Colonial dise\u00F1ada por el ingeniero y arquitecto Juan Kronfuss, que junto al Hospital Vicente Agüero datan del a\u00F1o 1925. Kronfuss naci\u00F3 en Bulgaria y lleg\u00F3 a Argentina en 1910. Su trabajo intenta rescatar la importancia del desarrollo de una arquitectura local vinculada a los materiales de la zona y no a la importaci\u00F3n de mercader\u00EDas y dise\u00F1os for\u00E1neos. Adem\u00E1s de esta capilla, en Jes\u00FAs Mar\u00EDa destacamos “El Cortijo” la casa de la familia Agüero construida en 1930 que se encuentra en el barrio Los Nogales (propiedad privada).</p>",
+				"description-en":"<p>This neo-colonial baroque chapel was designed by engineer and architect Juan Kronfus and, along with Vicente Agüero Hospital, built in 1925. Juan Kronfus was born in Bulgary but moved to Argentina in 1910. He dedicated his efforts to the study of the architecture of Colonial Barroque in Latin America and the importance of using local materials against imported goods.</p><p>Kronfus designed as well the residence of Vicente Agüero´s family, called “El Cortijo” in Los Nogales suburb, built in 1930. (Not open to visit)</p>",
 				"scheduleOfAttentionWeek":"Se la puede vistar en horario de misa: mi\u00E9rcoles, s\u00E1bados y domingos a las 18:30 hs.",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"capilla1.jpg",
@@ -277,10 +288,12 @@ window.ModelManager = {
 			{
 				"type":"attraction",
 				"name":"Parrillas de Jes\u00FAs Mar\u00EDa",
+				"name-en":"Parrillas of Jes\u00FAs Mar\u00EDa",
 				"id":"7",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"description":"<p>Las parrillas se han ganado el mote de \u0022el mejor asado del mundo\u0022. M\u00E1s de cincuenta a\u00F1os de asado compartido en tablas \u0022de a dos\u0022 donde los cortes llegan uno a uno en su punto justo. Se degustan entre 10 y 15 piezas coronadas con los mejores vinos de la Argentina. Los cuadriles y los lomitos de cerdo son tan famosos como los mejores churrascos de la pampa h\u00FAmeda. Una conjunci\u00F3n de carne sabrosa y tierna con un m\u00E9todo especialmente pensado para la misma. Las pasturas y suelos del norte cordob\u00E9s le dan a las carnes gran sabor, pero si los animales son grandes sus carnes se vuelven duras. Por eso se consumen animales peque\u00F1os que a\u00FAn tienen un sabor intenso y guardan la ternura en sus fibras. As\u00ED, los cortes son todos peque\u00F1os, por lo que comer una parrillada completa en Jes\u00FAs Mar\u00EDa es una suerte de degustaci\u00F3n de diferentes cortes de vaca, cerdo y cabrito.</p><p>Asimismo la cocina gourmet se ha instalado en la ciudad para decir que no todo es asado. Es una opci\u00F3n novedosa y creativa que va de la mano de j\u00F3venes autores que desarrollan su arte con gran pasi\u00F3n. Premios como Mejor Plato de Vanguardia (Inocencio), Mejor Plato Regional (El Museo Resto Bar) y un puesto para competir en el Torneo Argentino de Chef (La Torgnole Gastronomique) atestiguan el desarrollo de alta calidad de estos establecimientos que participan constantemente en competencias, demostraciones y clases en centros de ense\u00F1anza de C\u00F3rdoba.</p>",
+				"description-en":"<p>The Parrilla restaurants are of great importance in Jesus Maria and the surrounding region, offering the visitor a specially served treat. We boast of serving “the best asado in the world”</p><p>People sit at a table with a wooden plate between them. The meat is brought perfectly cooked, in small pieces, so nothing gets cold: beef, pork and kid in its different cuts and servings, accompanied by French fries topped with scrambled eggs or garden salads. The best wines of the country are available as well.</p><p>The gourmet cuisine has landed in the region to prove that not everything is asado. Young and daring new Chefs offer creative and delicious dishes and desserts.</p><p>Awards to The Best Vanguard Dish (Inocencio Resto), Best Regional Dish (El Museo Resto-Bar), and a chance to participate in the Argentinian Tournament for Chefs (La Torgnole Gastronomique) show the high developement and quality of these restaurants.</p>",
 				"scheduleOfAttentionWeek":"",
 				"scheduleOfAttentionWeekend":"",
 				"image1":"parrillada1.jpg",
@@ -365,13 +378,14 @@ window.ModelManager = {
 			{
 				"type":"festival",
 				"name":"Información del Festival",
+				"name-en":"Festival Information",
 				"id":"1",
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"address":"Cleto Perez y Tucuman",
 				"description":"<p>En mayo de 1965, bajo la imperiosa necesidad de recaudar fondos para solventar la atenci\u00F3n de los ni\u00F1os de las escuelas se propone la idea de realizar un festival de doma. Convencidos de la relevancia que tendr\u00EDa el evento se invita a todas las Cooperadoras de las Escuelas de Jes\u00FAs Mar\u00EDa. Inicialmente se sumaron 10 Cooperadoras, luego se adhirieron otras m\u00E1s hasta conformar la \u0022Uni\u00F3n de Cooperadoras Escolares”. El trabajo de estas voluntades logr\u00F3 llevar adelante con absoluto \u00E9xito el primer festival que se inaugur\u00F3 en enero de 1966. M\u00E1s de 45.000 personas asistieron al evento gaucho. El resultado, una recaudaci\u00F3n que cumpli\u00F3 con creces el objetivo planteado hizo que este sue\u00F1o se convirtiera en el Festival m\u00E1s grande de Am\u00E9rica en su g\u00E9nero, atrayendo en cada edici\u00F3n a m\u00E1s de 400 mil espectadores que viven esta fiesta popular y un sin n\u00FAmero de televidentes y radioescuchas que lo siguen desde sus hogares en todo el pa\u00EDs. Hasta el d\u00EDa de hoy las Cooperadores Escolares siguen llevando adelante el evento y los fondos recaudados se reparten entre las escuelas para sostener la educaci\u00F3n de los ni\u00F1os.</p><p>El principal atractivo es el campeonato de Jineteada, que consiste en un jinete montando un potro que es especialmente preparado a lo largo del a\u00F1o para esta ocasi\u00F3n. Las categor\u00EDas de montas son tres.</p><p>Crina Limpia: En esta categor\u00EDa se puede usar una lonja que va alrededor del pescuezo del animal como \u00FAnico sost\u00E9n fuerte del jinete, qui\u00E9n no puede dejar de trabajar el animal con las espuelas. El tiempo de monta es de 8 segundos.</p><p>La Grupa Sure\u00F1a o Surera: En esta categor\u00EDa no se usan estribos, pero se utiliza un cuero de oveja sujetado por un cinch\u00F3n. El jinete debe sujetar las riendas con una mano y el azote (huasca, talero, etc.) con la otra. El tiempo de monta es de 12 segundos.</p><p>El Basto con Encimera: Aqu\u00ED el hombre no deber\u00E1 perder los estribos ni \u0022charquear\u0022 (tocar al animal con las manos). En las otras categor\u00EDas el charqueo tambi\u00E9n quita puntos. El tiempo de monta es de 15 segundos.</p>",
-				"scheduleOfAttentionWeek":"De martes a domingos y feriados: de 10 a 19",
-				"scheduleOfAttentionWeekend":"",
+				"description-en":"<p>In May 1965, parents of school children, seeing the lack of good political measures in the area of Education, thought of having a Doma Festival as a way of raising funds. These persons invited people from other school boards and together they formed the Union of School Boards. Thanks to them, in January 1966 the first Festival was held. More than 45.000 people attended it, and the objective was amply reached.</p><p>The Festival is now the most important festival of its type in America, attracting every January more than 400 thousand spectators, and great TV and radio audience from all over the country. It is, as always, organized by the Union of School Boards, and the raised funds are divided among the schools to help support the education of our children.</p><p>The main attraction is the horseback riding championship, where a rider tries to stay on the back of the horse for a certain amount of time. The horses are specially bred and kept for this activity.</p><p> There are three categories in the competition: </p><ul><li>Crina Limpia: In this category the rider can only use a strip of leather around the horse´s neck for support, while poking the horse´s belly with his heels. Length of the ride: 8 seconds. </li><li>Grupa Sureña or Surera: In this category no stirrups can be used, although a skin of sheep is tied to the middle of the horse by a leather strip. The rider has to hold it for support with one hand while with the other holds the whip (called “huasca” or “talero”) Length of the ride: 12 seconds.</li><li>Basto con Encimera: In this one the rider must not lose the stirrups or 'charquear' (To touch the animal with the hands) Length of the ride: 15 seconds.</li></ul>",
+				"xtraInfo":"<strong>Entradas Anticipadas</strong><br>AUTOENTRADA: www.autoentrada.com<br>Córdoba: Patio Olmos<br>Nuevo Centro Shopping<br>Córdoba Shopping<br>Shopping Paseo Rivera<br>Carlos Paz: Teatro Zorba<br>Villa Allende Shopping<br>Boleterías del Anfiteatro del Festival<br>Informes del Festival: Tel. 03525-605005",
 				"image1":"festival1.jpg",
 				"image2":"festival2.jpg"
 			}
@@ -412,30 +426,151 @@ window.ModelManager = {
 				"extendedView":"false",
 				"listItemViewType":"cronograma",
 				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
-				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
-				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+				"ticketGeneral":"$70",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$170",
+				"ticketLow":"$150",
+				"ticketKids":"gratis"
 			}
 			,
 			{
 				"type":"cronograma",
-				"name":"Viernes 10",
+				"name":"Sábado 11",
 				"id":"1",
 				"extendedView":"false",
 				"listItemViewType":"cronograma",
-				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
-				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
-				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+				"description":"Nacho y Daniel<br>Los Huayras<br>Por Siempre Tucu<br>Los de Alberdi<br>Silvia Lallana<br>Los de Cabrera<br>Grupo Imán<br>Claudio Acosta<br>4x4 y Pastor Luna<br>Flaco Peña<br>Desfile de Emprendados",
+				"ticketGeneral":"$110",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$90",
+				"ticketLow":"$70",
+				"ticketKids":"$20"
 			}
 			,
 			{
 				"type":"cronograma",
-				"name":"Viernes 10",
+				"name":"Domingo 12",
 				"id":"1",
 				"extendedView":"false",
 				"listItemViewType":"cronograma",
-				"description":"Los Nocheros<br>Alma de Luna<br>Carlos Sánchez “El Tucu”<br>Jessica Benavidez<br>Julián Burgos<br>Acto Inaugural",
-				"ticketGeneral":"Entrada General $70;  Jubilados $40;  Menores Gratis.",
-				"ticketPremium":"Platea $ 170 (Fila 1 a 4); $ 150 (Fila 5 a 10)"
+				"description":"Sergio Galleguillo y la Fiesta Chayera<br>Raly Barriouevo<br>Piñón Fijo<br>Las Valijas | Amboé<br>Gisela Santa Cruz<br>José Galante<br>Peñeros<br>Desfile 'La Unión de los pueblos'<br>2° Campeonato Nacional de Destrezas Gauchas",
+				"ticketGeneral":"$80",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$100",
+				"ticketLow":"$80",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Lunes 13",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Los Tekis<br>Nestor Garnica<br>Tru-la-la | La Cantada<br>5 Sentidos<br>Los Izkierdos de la Cueva<br>Los Trajinantes<br>Ganador Peña 'El Aljibe'<br>Juegos Gauchos y Rastrín",
+				"ticketGeneral":"$80",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$150",
+				"ticketLow":"$130",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Martes 14",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Chaqueño Palavecino<br>Cacho Buenaventura<br>Guitarreros | La Callejera<br>Juan Bautista<br>Voces de Provincia<br>Cristian Quiroga<br>El Chofer del Chamamé y su conjunto<br>Vanina y su Folklore<br>Tropillas Entabladas",
+				"ticketGeneral":"$100",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$200",
+				"ticketLow":"$180",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Miércoles 15",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"León Gieco<br>Dúo Coplanacu<br>La Copla<br><Los del Suquía<br>Leandro Lovato<br>Matacos<br>Senderos<br>Tropillas Entabladas",
+				"ticketGeneral":"$80",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$140",
+				"ticketLow":"$120",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Jueves 16",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Abel Pintos<br>Fabricio Rodriguez<br>Almakanto<br>Cielo Tierra<br>Brisas del Norte<br>Chango Juárez<br>Los Infernales<br>Delegación de Entre Ríos<br>Los Surcos<br>Exhibición de Pato (Gendarmería Nacional)",
+				"ticketGeneral":"$80",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$200",
+				"ticketLow":"$180",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Viernes 17",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Soledad<br>Jairo<br>Los Caligaris<br>La Huella<br>Murmullos<br>Los Legales<br>Ariel Rojas<br>Ana Rodriguez<br>Camperada",
+				"ticketGeneral":"$90",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$150",
+				"ticketLow":"$130",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Sábado 18",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Los Manseros Santiagueños<br>Carabajalazo<br>Doña Jovita<br>Simplemente Los Cantores<br>Mario Alvarez Quiroga<br>Negro Ferreyra<br>Los Dioses del Chamamé<br>Paola Gudiño<br>María Luz<br>Chango Coplero<br>César Lagos<br>Camperada",
+				"ticketGeneral":"$110",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$150",
+				"ticketLow":"$130",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Domingo 19",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Luciano Pereyra<br>Facundo Toro<br>Los Caldenes<br>Cuervos del Malambo<br>Los Quilmeños<br>Kmila Reynoso<br>Final del Campeonato Nacional de Jineteada",
+				"ticketGeneral":"$70",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$150",
+				"ticketLow":"$130",
+				"ticketKids":"$20"
+			}
+			,
+			{
+				"type":"cronograma",
+				"name":"Lunes 20",
+				"id":"1",
+				"extendedView":"false",
+				"listItemViewType":"cronograma",
+				"description":"Banda XXI | La Fiesta<br>Espectáculo de campo con:<br>18 Tropillas<br>Campeonato Nacional de Jineteada<br>75 jineteadas<br>6 montas especiales de Jinetes de la Patria por noche",
+				"ticketGeneral":"$70",
+				"ticketOldMan":"$40",
+				"ticketHigh":"$150",
+				"ticketLow":"$130",
+				"ticketKids":"$20"
 			}
 			],
 			labelPlural: "Cronograma",
@@ -540,8 +675,8 @@ window.ModelManager = {
 		return;
 	},
 
-	//urlBase:"http://www.diproach.com/api/dc",
-	urlBase:"http://192.168.1.5/jesus-maria",
+	urlBase:"http://www.diproach.com/api/dc",
+	//urlBase:"http://localhost:8888/api/dc",
 
 	getAll:function (type, successCallback, errorCallback) {
 
@@ -572,56 +707,39 @@ window.ModelManager = {
     updateAll:function(){
     	if(App.isEnvironmentWeb()) return;
 
-        this.update(this.type.hotel);
-   // 	_.each(this.type, function (item) {
-   // 		this.update(item);
-   // 	}, this);
+    	_.each(this.type, function (item) {
+    		this.update(item);
+    	}, this);
     },
 
-    updateTest:function(item){
+    update:function(item){
+
     	var setup = this.getSetup(item.code);
 
-        var jsonString = JSON.stringify(setup);
+    	JSonUtil.exists(item.fileName,
+    		function(){
+    			// If exists update from server
+    			ModelManager.updateFromServer(item);
+    		},
+    		function(){
 
-        JSonUtil.create(item.fileName, jsonString,
-                      function(){
-                      
-                      
-                      alert("save ok");
-                      },
-                      function(){alert("save error");}
-                      );
+				// If not exist create file with setup values
+				JSonUtil.save(item.fileName, setup,
+					function(){
+
+
+						// If file was created we must try update from server
+						ModelManager.updateFromServer(item);
+
+					},
+					function(){}
+					);
+			},
+			function(){}
+			);
     },
-    
-update:function(item){
-    var setup = this.getSetup(item.code);
-    
-    JSonUtil.exists(item.fileName,
-                    function(){
-                    // If exists update from server
-                    ModelManager.updateFromServer(item);
-                    },
-                    function(){
-                    
-                    // If not exist create file with setup values
-                    var jsonString = JSON.stringify(setup);
-                    JSonUtil.save(item.fileName, jsonString,
-                                  function(){
-                                  
-                                  
-                                  // If file was created we must try update from server
-                                  ModelManager.updateFromServer(item);
-                                  
-                                  },
-                                  function(){alert("save error");}
-                                  );
-                    },
-                    function(){alert("exists error");}
-                    );
-},
 
     updateFromServer:function(definition){
-
 
     	var loadUrl = this.urlBase + definition.url;
 
@@ -629,8 +747,7 @@ update:function(item){
 
 
     		var jsonString = JSON.stringify(result.data);
-
-            JSonUtil.save(definition.fileName, jsonString, function(){}, function(){} );
+    		JSonUtil.save(definition.fileName, jsonString, function(){}, function(){} );
 
     	}).error(function(result) {
     	});

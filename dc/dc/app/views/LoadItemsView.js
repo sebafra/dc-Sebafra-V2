@@ -34,6 +34,7 @@ window.LoadItemsView = Backbone.View.extend({
     },
 
     loadItemsResult: function(result) {
+
     	var type = ModelManager.getDefinition(result.type);
     	if( type.adScreen == undefined){
         	var view = new ListView({ model:result });

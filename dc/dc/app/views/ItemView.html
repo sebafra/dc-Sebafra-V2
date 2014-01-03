@@ -4,11 +4,11 @@
       <div class="btn-group btn-group-justified">
       	
       	<% if (App.isLanguageSpanish()){ %>
-        <a id="btn-language-es" class="btn btn-default active" role="button">Espa&ntilde;ol</a>
+        <a id="btn-language-es" class="btn btn-default active" role="button" disabled="disabled">Espa&ntilde;ol</a>
         <a id="btn-language-en" class="btn btn-default" role="button">Ingl&eacute;s</a>
         <% } else {%>
         <a id="btn-language-es" class="btn btn-default" role="button">Espa&ntilde;ol</a>
-        <a id="btn-language-en" class="btn btn-default active" role="button">Ingl&eacute;s</a>
+        <a id="btn-language-en" class="btn btn-default active" role="button" disabled="disabled">Ingl&eacute;s</a>
         <% } %>
         
       </div>
@@ -39,7 +39,7 @@
   <div class="well itemWell">
     <div class="row">
      <div class="col-xs-8 pull-left">
-      <span class="barTitle"><%= model.name %></span>
+      <span class="barTitle"><%= App.translate(model, "name") %></span>
       <% if (typeof(model.address) != "undefined"){ %>
       <span class="barAdress"><%= model.address %></span>
       <% } %>
@@ -60,9 +60,25 @@
 <div class="itemDescription">
   <p><%= App.translate(model, "description") %></p>
 </div>
-<div class="row">
+
+ <% if ((typeof(model.xtraInfo) != "undefined")){ %>
+ <div class="row">
+ <div class="panel panel-default itemInfo">
+  <div class="panel-body">
+    <div class="col-sm-2 col-xs-2">
+      <h1 class="glyphicon glyphicon-list"></h1>
+    </div>
+    <div class="col-sm-9 col-xs-9">
+      <h4>Informaci&oacute;n Adicional</h4>
+      <span><%= model.xtraInfo %></span>
+    </div>
+  </div>
+</div>
+</div>
+<% } %>
 
  <% if ((typeof(model.scheduleOfAttentionWeek) != "undefined") || (typeof(model.scheduleOfAttentionWeek) != "undefined") ){ %>
+ <div class="row">
  <div class="panel panel-default itemInfo">
   <div class="panel-body">
     <div class="col-sm-2 col-xs-2">
@@ -75,8 +91,8 @@
     </div>
   </div>
 </div>
-<% } %>
 </div>
+<% } %>
 
 </div>
 <script>

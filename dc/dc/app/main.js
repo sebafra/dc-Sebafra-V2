@@ -1,10 +1,6 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
-document.addEventListener("resume", onResume, false);
 
-function onResume() {
-    ModelManager.updateAll();
-}
 
 $( document ).ready(function() {
 	if(App.isEnvironmentWeb()) onDeviceReady();
@@ -12,7 +8,6 @@ $( document ).ready(function() {
 
 
 function onDeviceReady() {
-	$.ajaxSetup({ cache: false });
 
     loadTemplates( appTemplatesLoaded );
     
