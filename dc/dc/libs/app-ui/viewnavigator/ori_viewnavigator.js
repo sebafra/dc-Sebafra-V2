@@ -27,12 +27,10 @@ var ViewNavigator = function( target, backLinkCSS, bindToWindow ) {
 	this.winPhone = (navigator.userAgent.search(regexp) >= 0);
 	
 	this.rootElement = $('<div class="viewNavigator_root"></div>');
-	this.footer = $('<div class="ftr"></div>');
 	this.header = $('<div class="viewNavigator_header"></div>');
 	this.content = $('<div class="viewNavigator_content" id="contentRoot"></div>');
 	this.rootElement.append( this.header );
 	this.rootElement.append( this.content );
-	this.rootElement.append( this.footer );
 	
 	this.parent = $( target );
 	
@@ -369,6 +367,7 @@ ViewNavigator.prototype.guid = function() {
 
 
 /*  PHONEGAP INTEGRATION */
+/*
 //android+phonegap specific back button support - will only work if phonegap is used on android (www.phonegap.com)
 if ( typeof PhoneGap != 'undefined' ) { 
 	document.addEventListener("deviceready", onDeviceReady, false);
@@ -385,3 +384,4 @@ function onBackKey( event ) {
 		window.backKeyViewNavigators[x].popView();
 	}
 }
+*/

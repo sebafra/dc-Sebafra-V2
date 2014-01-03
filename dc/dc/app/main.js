@@ -4,12 +4,21 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 $( document ).ready(function() {
 	if(App.isEnvironmentWeb()) onDeviceReady();
+
+	
+	
+//	alert($('body').css('height'));
+//	alert($('#viewNavigator_header').css('height'));
 });
 
 
 function onDeviceReady() {
 
-    loadTemplates( appTemplatesLoaded );
+	$(".ftr").click(function(){
+		alert("hola");
+	});
+
+	loadTemplates( appTemplatesLoaded );
     
     ModelManager.updateAll();
 }

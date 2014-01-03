@@ -801,3 +801,13 @@ a{
 	z-index: 100;
 	position: absolute;
 }
+
+
+.ftr{
+	width: 100%;
+	height: 50px;
+	background: red;
+	z-index: 300;
+	position: absolute;
+	bottom: 0px;
+}
