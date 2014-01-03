@@ -4,6 +4,10 @@ window.App = {
 		return true;
 	},
 
+	isOnlineEnabled:function(){
+		return false;
+	},
+
 	adScreenToShow:0,
 
 	language:"",

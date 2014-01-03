@@ -4,11 +4,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 $( document ).ready(function() {
 	if(App.isEnvironmentWeb()) onDeviceReady();
-
-	
-	
-//	alert($('body').css('height'));
-//	alert($('#viewNavigator_header').css('height'));
 });
 
 
