@@ -6,6 +6,8 @@ window.App = {
 
 	adScreenToShow:0,
 
+	language:"",
+	
 	translate:function(object, key){
 		var txt = object[key + App.language];
 		if(txt == undefined)
