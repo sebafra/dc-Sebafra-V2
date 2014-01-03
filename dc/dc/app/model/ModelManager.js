@@ -540,8 +540,8 @@ window.ModelManager = {
 		return;
 	},
 
-	urlBase:"http://www.diproach.com/api/dc",
-	//urlBase:"http://localhost:8888/api/dc",
+	//urlBase:"http://www.diproach.com/api/dc",
+	urlBase:"http://192.168.1.5/jesus-maria",
 
 	getAll:function (type, successCallback, errorCallback) {
 
@@ -572,39 +572,56 @@ window.ModelManager = {
     updateAll:function(){
     	if(App.isEnvironmentWeb()) return;
 
-    	_.each(this.type, function (item) {
-    		this.update(item);
-    	}, this);
+        this.update(this.type.hotel);
+   // 	_.each(this.type, function (item) {
+   // 		this.update(item);
+   // 	}, this);
     },
 
-    update:function(item){
-
+    updateTest:function(item){
     	var setup = this.getSetup(item.code);
 
-    	JSonUtil.exists(item.fileName,
-    		function(){
-    			// If exists update from server
-    			ModelManager.updateFromServer(item);
-    		},
-    		function(){
+        var jsonString = JSON.stringify(setup);
 
-				// If not exist create file with setup values
-				JSonUtil.save(item.fileName, setup,
-					function(){
-
-
-						// If file was created we must try update from server
-						ModelManager.updateFromServer(item);
-
-					},
-					function(){}
-					);
-			},
-			function(){}
-			);
+        JSonUtil.create(item.fileName, jsonString,
+                      function(){
+                      
+                      
+                      alert("save ok");
+                      },
+                      function(){alert("save error");}
+                      );
     },
+    
+update:function(item){
+    var setup = this.getSetup(item.code);
+    
+    JSonUtil.exists(item.fileName,
+                    function(){
+                    // If exists update from server
+                    ModelManager.updateFromServer(item);
+                    },
+                    function(){
+                    
+                    // If not exist create file with setup values
+                    var jsonString = JSON.stringify(setup);
+                    JSonUtil.save(item.fileName, jsonString,
+                                  function(){
+                                  
+                                  
+                                  // If file was created we must try update from server
+                                  ModelManager.updateFromServer(item);
+                                  
+                                  },
+                                  function(){alert("save error");}
+                                  );
+                    },
+                    function(){alert("exists error");}
+                    );
+},
 
     updateFromServer:function(definition){
+
 
     	var loadUrl = this.urlBase + definition.url;
 
@@ -612,7 +629,8 @@ window.ModelManager = {
 
 
     		var jsonString = JSON.stringify(result.data);
-    		JSonUtil.save(definition.fileName, jsonString, function(){}, function(){} );
+
+            JSonUtil.save(definition.fileName, jsonString, function(){}, function(){} );
 
     	}).error(function(result) {
     	});

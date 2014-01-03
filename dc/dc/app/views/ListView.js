@@ -10,7 +10,7 @@ window.ListView = Backbone.View.extend({
 
         this.model = options.model;
 
-        this.adScreenFileName = options.adScreenFileName;
+                                       this.adScreenFileName = options.adScreenFileName;
 
         this.title = this.model.labelPlural;
 
