@@ -13,6 +13,7 @@ window.HomeView = Backbone.View.extend({
     events:{
         "click .back1":"loadAttractions",
         "click .back2":"loadOtherEvents",
+        "click .back3":"loadRestaurants",
         "click .back4":"loadHotels",
         "click .back5":"loadService",
         "click .back6":"loadFestival",
@@ -37,6 +38,11 @@ window.HomeView = Backbone.View.extend({
     	var view = new LoadItemsView({type:ModelManager.type.hotel.code});
     	//window.viewNavigator.pushView( view );
     	ViewNavigatorUtil.pushView( view );
+    },
+    loadRestaurants:function () {
+        var view = new LoadItemsView({type:ModelManager.type.restaurant.code});
+        //window.viewNavigator.pushView( view );
+        ViewNavigatorUtil.pushView( view );
     },
     loadOtherEvents:function () {
         var view = new LoadItemsView({type:ModelManager.type.otherEvent.code});

@@ -71,48 +71,58 @@ window.ModelManager = {
 			items: [
 			{
 				"type":"hotel",
-				"name":"Estancia Jesu\u00EDtica",
-				"id":"1",
+				"name":"Hotel Boutique Benzoni",
+				"id":1,
 				"hotelType":"Hotel",
 				"extendedView":"true",
-				"listItemViewType":"featured",
-				"address":"Av. del Trabajo 2811",
-				"phoneNumber":"352545896",
-				"image1":"image1.jpg"
-
-			}
-			,
+				"listItemViewType":"extended",
+				"address":"La Toma 830",
+				"phoneNumber":3525424686,
+				"email":"info@benzoniposadaspa.com.ar"
+			},
 			{
 				"type":"hotel",
-				"name":"Estacion de Trenes",
-				"id":"2",
-				"hotelType":"Hotel",
-				"extendedView":"false",
+				"name":"Hotel Jesús María",
+				"id":2,
+				"hotelType":"Hotel 3*",
+				"extendedView":"true",
 				"listItemViewType":"extended",
-				"address":"Av. del Trabajo 2811",
-				"phoneNumber":"352545896"
-			}
-			,
+				"address":"Almafuerte 177",
+				"phoneNumber":3525445888,
+				"email":""
+			},
 			{
 				"type":"hotel",
-				"name":"Estacion de Trenes",
-				"id":"3",
+				"name":"Hotel La Cabaña",
+				"id":3,
 				"hotelType":"Hotel",
-				"extendedView":"false",
+				"extendedView":"true",
 				"listItemViewType":"extended",
-				"address":"Av. del Trabajo 2811",
-				"phoneNumber":"352545896"
-			}
-			,
+				"address":"Ruta 9 m. 754",
+				"phoneNumber":3525420563,
+				"email":"lacabana@coop5.com.ar"
+			},
 			{
 				"type":"hotel",
-				"name":"Estacion de Trenes",
-				"id":"4",
-				"hotelType":"Hotel",
-				"extendedView":"false",
+				"name":"HOTEL NAPOLEON",
+				"id":4,
+				"hotelType":"Hotel 3*",
+				"extendedView":"true",
 				"listItemViewType":"extended",
-				"address":"Av. del Trabajo 2811",
-				"phoneNumber":"352545896"
+				"address":"España 675",
+				"phoneNumber":3525401700,
+				"email":"info@napoleononline.com.ar "
+			},
+			{
+				"type":"hotel",
+				"name":"POSADA HENEN",
+				"id":5,
+				"hotelType":"Hotel 2*",
+				"extendedView":"true",
+				"listItemViewType":"extended",
+				"address":"Bv. Agüero 67",
+				"phoneNumber":3525445960,
+				"email":"posada_henen@outlook.com"
 			}
 
 			],
@@ -320,10 +330,29 @@ window.ModelManager = {
 		},
 		restaurant:{
 			items: [
-			{"name":"rest 1","id":"1"}
-			,{"name":"rest 2","id":"2"}
-			,{"name":"rest 3","id":"3"}
-			,{"name":"rest 4","id":"4"}
+			{
+				"type":"restaurant",
+				"name":"Hotel Boutique Benzoni",
+				"id":1,
+				"hotelType":"Restaurant",
+				"extendedView":"true",
+				"listItemViewType":"extended",
+				"address":"La Toma 830",
+				"phoneNumber":3525424686,
+				"email":"info@benzoniposadaspa.com.ar"
+			}
+			,
+			{
+				"type":"restaurant",
+				"name":"Hotel Boutique Benzoni",
+				"id":2,
+				"hotelType":"Resto-Bar",
+				"extendedView":"true",
+				"listItemViewType":"extended",
+				"address":"La Toma 830",
+				"phoneNumber":3525424686,
+				"email":"info@benzoniposadaspa.com.ar"
+			}
 			],
 			labelPlural: "Restaurantes",
 			labelSingular: "Restaurante",

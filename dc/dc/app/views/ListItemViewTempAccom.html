@@ -20,7 +20,7 @@
 		<a href="tel:<%= phoneNumber %>"><%= phoneNumber %></a>
 	</span>
 	<% } %>
-	<% if (typeof(celNumber) !== "undefined"){ %>
+	<% if ((typeof(celNumber) !== "undefined")  && (phoneNumber !== null)){ %>
 	<span class="itemData">
 		<span class="glyphicon glyphicon-phone"></span>
 		<a href="tel:<%= celNumber %>"><%= celNumber %></a>
