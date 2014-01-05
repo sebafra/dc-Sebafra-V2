@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-xs-12">
       <div class="btn-group btn-group-justified">
-      	
+
       	<% if (App.isLanguageSpanish()){ %>
         <a id="btn-language-es" class="btn btn-default active" role="button">Espa&ntilde;ol</a>
         <a id="btn-language-en" class="btn btn-default" role="button">Ingl&eacute;s</a>
@@ -10,7 +10,7 @@
         <a id="btn-language-es" class="btn btn-default" role="button">Spanish</a>
         <a id="btn-language-en" class="btn btn-default active" role="button">English</a>
         <% } %>
-        
+
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@
   </div>
   <div class="well itemWell">
     <div class="row">
-     <div class="col-xs-8 pull-left">
+     <div class="col-xs-8 col-sm-8 pull-left">
       <span class="barTitle"><%= App.translate(model, "name") %></span>
       <% if (typeof(model.address) != "undefined"){ %>
       <span class="barAdress"><%= model.address %></span>
@@ -47,7 +47,7 @@
       <span class="barTel"><%= model.phoneNumber %></span>
       <% } %>
     </div>
-    <div class="col-xs-4 pull-right barButtons">
+    <div class="col-xs-4 col-sm-4 pull-right barButtons">
       <% if (typeof(model.phoneNumber) != "undefined"){ %>
       <a href="tel:<%= model.phoneNumber %>" class="btn btn-default btn-sm" role="button"><span class="icon ion-ios7-telephone"></span></a>
       <% } %>
@@ -65,10 +65,10 @@
  <div class="row">
  <div class="panel panel-default itemInfo">
   <div class="panel-body">
-    <div class="col-sm-2 col-xs-2">
+    <div class="col-sm-4 col-xs-2">
       <h1 class="glyphicon glyphicon-list"></h1>
     </div>
-    <div class="col-sm-9 col-xs-9">
+    <div class="col-sm-8 col-xs-10">
       <h4>Informaci&oacute;n Adicional</h4>
       <span><%= model.xtraInfo %></span>
     </div>
@@ -81,11 +81,11 @@
  <div class="row">
  <div class="panel panel-default itemInfo">
   <div class="panel-body">
-    <div class="col-sm-2 col-xs-2">
+    <div class="col-sm-4 col-xs-2">
       <h1 class="glyphicon glyphicon-calendar"></h1>
     </div>
-    <div class="col-sm-9 col-xs-9">
-      <h4>Horarios de Atenci&oacute;n</h4>
+    <div class="col-sm-8 col-xs-10">
+      <h4>Horario de Visitas</h4>
       <span><%= model.scheduleOfAttentionWeek %></span>
       <span><%= model.scheduleOfAttentionWeekend %></span>
     </div>

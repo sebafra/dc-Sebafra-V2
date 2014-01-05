@@ -6,20 +6,20 @@
 
 input,
 textarea {
-	-webkit-touch-callout: auto;
-	-webkit-user-select: auto;
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
 }
 
 body {
-	position:absolute;
-	top:0px;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	overflow: hidden;
-	padding: 0px;
-	margin: 0px;
-	background-color:#FFF;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color:#FFF;
 }
 .subtext {
     font-size:0.85em;
@@ -27,22 +27,22 @@ body {
 }
 
 .data-list {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	overflow: hidden;
-	position:relative;
-	background-color: #FFF;
-	min-height:100%;
-	padding:0;
-	margin:0;
-	        /*
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    position:relative;
+    background-color: #FFF;
+    min-height:100%;
+    padding:0;
+    margin:0;
+            /*
     backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	*/
+    -webkit-backface-visibility: hidden;
+    */
 }
 
 .data-list-lightweight {
@@ -60,17 +60,17 @@ body {
 .data-list-lightweight li
 .data-list ul,
 .data-list li {
-	padding:0;
-	margin:0;
-	border:none;
+    padding:0;
+    margin:0;
+    border:none;
     position: relative;
 }
 
 .data-list-lightweight ul,
 .data-list ul {
-	display:block;
-	width:100%;
-	max-width:100%;
+    display:block;
+    width:100%;
+    max-width:100%;
 }
 
 .data-list-lightweight li,
@@ -91,9 +91,9 @@ body {
 /*TODO: Modificar esto y pasarlo al div del LI*/
 .data-list-lightweight li.listSelected,
 .data-list li.listSelected {
-	color:#FFF;
-	border-top:1px solid #77AF28;
-	background-color: #77AF28;
+    color:#FFF;
+    border-top:1px solid #999;
+    background-color: #e8e8e8;
     font-weight: bold;
     /*background-image:url('images/more_disclosure_white.png');*/
 }
@@ -481,20 +481,20 @@ a{
     color: inherit;
 }
 #slider{
-	height: 15em;
+    height: 15em;
 }
 #slider img{
-	width: 100%;
+    width: 100%;
 }
 .container {
-	text-align: center;
+    text-align: center;
     padding: 0;
 }
 .barra {
-	background: #999;
-	width: 100%;
-	height: 4em;
-	color: #222;
+    background: #999;
+    width: 100%;
+    height: 4em;
+    color: #222;
 }
 #footer {
     position:absolute; z-index:200;
@@ -508,27 +508,27 @@ a{
     text-align: center;
 }
 .footerIcon{
-	display: inline-block;
-	width: 18%;
-	vertical-align: central;
-	text-align: center;
-	font-size: 1.7em;
-	color: white;
+    display: inline-block;
+    width: 18%;
+    vertical-align: central;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
 }
 .footerIcon span{
-	display: block;
+    display: block;
 }
 .footerIconTxt{
-	font-size: .5em;
+    font-size: .5em;
 }
 .homeButton{
-	width:48%;
-	display: inline-block;
-	border: 1px solid #FFFFFF;
-	overflow: hidden;
-	height: 10em;
-	text-align: center;
-	margin: 0;
+    width:48%;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+    height: 10em;
+    text-align: center;
+    margin: 0;
     position: relative;
 }
 .homeButton p{
@@ -565,39 +565,43 @@ a{
 }
 .back7{
     background-image:url('images/imagen7.jpg');
+    opacity: .5;
 }
 .homeButton:first-child{
-	width: 98%;
+    width: 98%;
 }
 .homeButton .icon{
-	font-size: 3em;
-	color: #fff;
-	margin-top: .8em;
+    font-size: 3em;
+    color: #fff;
+    margin-top: .8em;
 }
 .img{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .featured{
-	background-color: #f6f6f6!important;
+    background-color: #f6f6f6!important;
 }
 .barTitle{
-	display: block;
-	font-size: 1.3em;
+    display: block;
+    font-size: 1.3em;
 }
 .barAddress, .barTel{
-	display: block;
+    display: block;
 }
 .itemDescription p{
-	text-align: left;
-	padding: 1em;
-	padding-top: .2em;
-	padding-bottom: .2em;
+    text-align: left;
+    padding: 1em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+.itemDescription li{
+    text-align: left;
 }
 .itemInfo{
     text-align: left;
@@ -746,14 +750,38 @@ a{
 .liContainerCronograma .itemData span:first-child {
     margin-right: .5em;
 }
+.adScreen{
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background: red;
+    z-index: 100;
+    position: absolute;
+}
 
 /********************************/
-/* Tablet Portrait */
+/* Div Absoluto arrow down */
+/********************************/
+
+.ftr{
+    width: 100%;
+    height: 10em;
+    background: url("images/arrow_down.png") no-repeat bottom center;
+    z-index: 300;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    opacity: .7;
+}
+
+/********************************/
+/* Media Queries: Tablet Portrait */
 /********************************/
 
 @media screen and (min-device-width : 768px) {
     body{
-    	font-size: 16px;
+        font-size: 16px;
     }
     #slider {
         height: 25em;
@@ -774,7 +802,6 @@ a{
     }
     .data-list li {
     font-size: 1.3em;
-    padding:1.6em;
     }
     .btn-sm{
     padding: 10px 20px;
@@ -788,26 +815,51 @@ a{
     padding: 0 !important;
     }
     .homeButton:first-child{
-    height: 25em !important;
+    height: 20em !important;
+    }
+    .ftr{
+        background: url("images/arrow_down_big.png") no-repeat bottom center;
+        height: 15em;
+    }
+    .row{
+        margin-left: -20px;
+    }
+    .label{
+        width:100px;
+    }
+    .liContainerTempAccom .itemSecondLine{
+        line-height: 2;
+    }
+    .itemInfo h1.glyphicon {
+        font-size: 4em;
+        margin-left: 1em;
+        color: #999;
+    }
+    .itemWell .col-sm-8 {
+        padding-left: 20px;
     }
 }
+/********************************/
+/* Media Queries: Small Phones  */
+/********************************/
 
-.adScreen{
-	left: 5%;
-	top: 5%;
-	width: 90%;
-	height: 90%;
-	background: red;
-	z-index: 100;
-	position: absolute;
+@media screen and (max-device-width : 320px) and (-webkit-max-device-pixel-ratio: 1.5){
+    .itemPhone {
+        display: block;
+    }
 }
+/********************************/
+/* Media Queries: Xtra Small Phones  */
+/********************************/
 
-
-.ftr{
-	width: 100%;
-	height: 50px;
-	background: red;
-	z-index: 300;
-	position: absolute;
-	bottom: 0px;
+@media screen and (max-device-width : 240px) {
+    .liContainer {
+        border-top:2px solid #999;
+    }
+    .itemSecondLine {
+        font-size: 1em;
+    }
+    .liContainerCronograma .itemData .glyphicon {
+        display: none;
+    }
 }

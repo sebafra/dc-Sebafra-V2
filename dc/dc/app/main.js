@@ -9,12 +9,13 @@ $( document ).ready(function() {
 
 function onDeviceReady() {
 
-	$(".ftr").click(function(){
-		alert("hola");
-	});
+	// $(".ftr").click(function(){
+	// 	alert("hola");
+	// });
+    hideArrow();
 
 	loadTemplates( appTemplatesLoaded );
-    
+
     ModelManager.updateAll();
 }
 
@@ -23,10 +24,9 @@ function appTemplatesLoaded() {
     $("body").empty();
 
     var homeView = new HomeView();
-    
-    
+
     //Setup the ViewNavigator
-    window.viewNavigator = new ViewNavigator( 'body' );	
+    window.viewNavigator = new ViewNavigator( 'body' );
     window.viewNavigator.pushView( homeView );
     document.addEventListener("backbutton", onBackKey, false);
 }
@@ -38,6 +38,9 @@ function onBackKey( event ) {
         return false;
     }
     navigator.app.exitApp();
+}
+function hideArrow () {
+    setTimeout(function(){$(".ftr").fadeOut("slow")},2500);
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);

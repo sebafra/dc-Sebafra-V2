@@ -17,7 +17,7 @@ window.HomeView = Backbone.View.extend({
         "click .back4":"loadHotels",
         "click .back5":"loadService",
         "click .back6":"loadFestival",
-        "click .back7":"loadRecomendado"
+        // "click .back7":"loadRecomendado"
     },
 
     render:function (eventName) {
