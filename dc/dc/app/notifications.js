@@ -1,4 +1,5 @@
 var pushNotification;
+var deviceSO;
 
 function enableNotifications() {
 //    alert('start the notifications!!!');
@@ -9,23 +10,24 @@ function enableNotifications() {
     	if (device.platform == 'android' || device.platform == 'Android') {
 //			alert('registering android');
         	pushNotification.register(successHandler, errorHandler, {"senderID":"375490732716","ecb":"onNotificationGCM"});		// required!
+            deviceSO = "android";
 		} else {
 //			alert('registering iOS');
         	pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+            deviceSO = "ios";
     	}
     }
 	catch(err) 
 	{ 
-		txt="There was an error on this page.\n\n"; 
-		txt+="Error description: " + err.message + "\n\n"; 
-		alert(txt); 
-	} 
+        pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+        deviceSO = "ios";
+	}
 }
 
 // handle APNS notifications for iOS
 function onNotificationAPN(e) {
     if (e.alert) {
-//         alert('push-notification: ' + e.alert);
+         alert(e.alert);
          navigator.notification.alert(e.alert);
     }
         
@@ -35,6 +37,7 @@ function onNotificationAPN(e) {
     }
     
     if (e.badge) {
+        alert(e.alert);
         pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
     }
 }
@@ -93,6 +96,9 @@ function tokenHandler (result) {
 //	alert('<li>token: '+ result +'</li>');
     // Your iOS push server needs to know the token before it can push to this device
     // here is where you might want to send it the token for later use.
+
+    if(deviceSO == "ios")
+        deviceRegister(result);
 }
 
 function successHandler (result) {
@@ -105,7 +111,6 @@ function errorHandler (error) {
 
 
 function deviceRegister (device) {
-	//alert("deviceRegister");
 	var url = "http://www.diproach.com/api/dc/device/register?json=%7Bdevice%3A%22" + device + "%22%2CapplicationId%3D%22JMETM%22%7D";
 
 	$.getJSON(url, function(result) {
