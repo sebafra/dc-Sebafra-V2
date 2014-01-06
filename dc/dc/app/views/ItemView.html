@@ -1,5 +1,6 @@
 <div class="container">
-<div class="row">
+  <% if (typeof(model.multiLanguage) != "undefined"){ %>
+  <div class="row">
     <div class="col-xs-12">
       <div class="btn-group btn-group-justified">
 
@@ -14,6 +15,8 @@
       </div>
     </div>
   </div>
+  <% } %>
+  
   <div class="row">
     <div class="swiper-container">
       <div class="swiper-wrapper">

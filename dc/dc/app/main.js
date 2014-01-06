@@ -17,6 +17,11 @@ function onDeviceReady() {
 	loadTemplates( appTemplatesLoaded );
 
     ModelManager.updateAll();
+    
+	if(App.isEnvironmentWeb() == false){
+		window.setTimeout(enableNotifications,30000);
+	}
+
 }
 
 function appTemplatesLoaded() {

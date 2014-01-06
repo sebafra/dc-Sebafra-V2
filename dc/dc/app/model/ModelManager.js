@@ -191,6 +191,7 @@ window.ModelManager = {
 		attraction:{
 			items: [
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Estancia Jesu\u00EDtica",
 				"name-en":"Jesuit Estancia of Jesús María",
@@ -213,6 +214,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Festival de Doma y Folclore",
 				"name-en":"Festival of Doma and Folclore",
@@ -231,6 +233,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Estaci\u00F3n de Trenes",
 				"name-en":"Jesus Maria Train Station",
@@ -245,6 +248,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Torre Céspedes",
 				"name-en":"Cespedes Tower",
@@ -259,6 +263,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Museo de la Ciudad Luis Biondi",
 				"name-en":"Museum of the City “Luis Biondi",
@@ -275,6 +280,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Capilla Kronfus",
 				"name-en":"Kronfus Chapel",
@@ -289,6 +295,7 @@ window.ModelManager = {
 			}
 			,
 			{
+				"multiLanguage":"yes",
 				"type":"attraction",
 				"name":"Parrillas de Jes\u00FAs Mar\u00EDa",
 				"name-en":"Parrillas of Jes\u00FAs Mar\u00EDa",

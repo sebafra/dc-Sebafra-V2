@@ -370,7 +370,7 @@ ViewNavigator.prototype.guid = function() {
 
 /*  PHONEGAP INTEGRATION */
 //android+phonegap specific back button support - will only work if phonegap is used on android (www.phonegap.com)
-if ( typeof PhoneGap != 'undefined' ) { 
+/*if ( typeof PhoneGap != 'undefined' ) { 
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
@@ -385,3 +385,4 @@ function onBackKey( event ) {
 		window.backKeyViewNavigators[x].popView();
 	}
 }
+*/
