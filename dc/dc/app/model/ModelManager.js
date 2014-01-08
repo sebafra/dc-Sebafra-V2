@@ -180,7 +180,9 @@ window.ModelManager = {
 				"extendedView":"true",
 				"listItemViewType":"simple",
 				"description":"<p>Encuentro de Pintores Paisajistas. Abril.</p><p>Córdoba Jazz Camp. Segunda semana de vacaciones de Julio.</p><p>Festival de Destrezas Gauchas. Agosto.</p><p>Encuentro de Coros. Noviembre.</p>",
-				"image1":"otroevento1.jpg"
+				"image1":"otroevento1.jpg",
+				"image2":"otroevento2.jpg",
+				"image3":"otroevento3.jpg"
 			}
 
 			],
