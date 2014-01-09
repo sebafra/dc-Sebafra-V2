@@ -1,5 +1,7 @@
 var pushNotification;
 var deviceSO;
+var deviceVersion;
+var deviceModel;
 
 function enableNotifications() {
 //    alert('start the notifications!!!');
@@ -10,17 +12,23 @@ function enableNotifications() {
     	if (device.platform == 'android' || device.platform == 'Android') {
 //			alert('registering android');
         	pushNotification.register(successHandler, errorHandler, {"senderID":"375490732716","ecb":"onNotificationGCM"});		// required!
-            deviceSO = "android";
+            deviceSO      = "android";
+            deviceVersion = device.version;
+            deviceModel   = device.model;
 		} else {
 //			alert('registering iOS');
         	pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
             deviceSO = "ios";
+            deviceVersion = "ios";
+            deviceModel = "ios";
     	}
     }
 	catch(err) 
 	{ 
         pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
         deviceSO = "ios";
+        deviceVersion = "ios";
+        deviceModel = "ios";
 	}
 }
 
@@ -111,8 +119,18 @@ function errorHandler (error) {
 
 
 function deviceRegister (device) {
-	var url = "http://www.diproach.com/api/dc/device/register?json=%7Bdevice%3A%22" + device + "%22%2CapplicationId%3D%22JMETM%22%7D";
-
+	
+	if(deviceSO == undefined) 		deviceSO = "";
+	if(deviceVersion == undefined) 	deviceVersion = "";
+	if(deviceModel == undefined) 	deviceModel = "";
+	
+//	alert(deviceSO);
+//	alert(deviceVersion);
+//	alert(deviceModel);
+	
+	var url = "http://diproach.cloudapp.net/api/device/register?json=%7Bdevice%3A%22" + device + "%22%2CapplicationId%3A%22JMETM%22%2CapplicationVersion%3A%221%22%2Cos%3A%22" + deviceSO + "%22%2CosVersion%3A%22" + deviceVersion + "%22%2Cmodel%3A%22" + deviceModel + "%22%7D";
+	
+	
 	$.getJSON(url, function(result) {
 
 //		alert(JSON.stringify(result.data));

@@ -19,7 +19,7 @@ function onDeviceReady() {
     ModelManager.updateAll();
     
 	if(App.isEnvironmentWeb() == false){
-		window.setTimeout(enableNotifications,10000);
+		window.setTimeout(enableNotifications,30000);
 	}
 
 }
