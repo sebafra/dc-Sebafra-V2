@@ -5,7 +5,6 @@ window.ItemView = Backbone.View.extend({
 
     template:undefined,
     backLabel: "Volver",
-    // backLabel: "<span class='icon ion-location'></span>",
     title:"",
 
     initialize: function(options) {
@@ -33,7 +32,7 @@ window.ItemView = Backbone.View.extend({
     	App.setLanguageSpanish();
     	this.reload();
     },
-    
+
     changeLanguageEnglish:function () {
     	App.setLanguageEnglish();
     	this.reload();
@@ -43,7 +42,7 @@ window.ItemView = Backbone.View.extend({
         var view = new LoadItemView({model:this.model.model, labelSingular:this.title});
         window.ViewNavigatorUtil.replaceView( view );
     },
-    
+
     render:function (eventName) {
         var model = this.model;
         this.$el.html( this.template( model ));

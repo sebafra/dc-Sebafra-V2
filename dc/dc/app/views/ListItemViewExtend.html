@@ -1,6 +1,9 @@
 <div class="liContainer liContainerExtended">
 <div class="itemFirstLine">
 	<strong class="itemName" id="name"><%= name %></strong>
+	<% if (typeof(nameLabel) !== "undefined"){ %>
+	<span class="label label-success"><%= nameLabel %></span>
+	<% } %>
 </div>
 <div class="itemSecondLine">
 	<span class="itemData">
