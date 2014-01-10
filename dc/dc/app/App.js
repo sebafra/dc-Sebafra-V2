@@ -1,7 +1,7 @@
 window.App = {
 
 	isEnvironmentWeb:function(){
-		return false;
+		return true;
 	},
 
 	isOnlineEnabled:function(){
