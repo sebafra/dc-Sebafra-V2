@@ -91,10 +91,10 @@ body {
 /*TODO: Modificar esto y pasarlo al div del LI*/
 .data-list-lightweight li.listSelected,
 .data-list li.listSelected {
-    color:#FFF;
+   /* color:#FFF;
     border-top:1px solid #999;
     background-color: #e8e8e8;
-    font-weight: bold;
+    font-weight: bold;*/
     /*background-image:url('images/more_disclosure_white.png');*/
 }
 
@@ -343,8 +343,8 @@ body {
     .data-list li .listSelected #overlay #name,
     .data-list .listSelected div #name,
     .data-list li .listSelected div #name{
-        text-shadow: 1px 1px #000;
-        color: #8CE200;
+        /*text-shadow: 1px 1px #000;
+        color: #8CE200;*/
     }
 
     .green,
@@ -813,7 +813,7 @@ a{
 	margin-right: 0px;
 	margin-bottom: 50px;
 	margin-left: 0px;
-    
+
     }
     .homeButton:first-child p{
     font-size: 1.6em !important;
