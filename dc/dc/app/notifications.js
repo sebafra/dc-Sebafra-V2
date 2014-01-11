@@ -128,7 +128,7 @@ function deviceRegister (device) {
 //	alert(deviceVersion);
 //	alert(deviceModel);
 	
-	var url = "http://diproach.cloudapp.net/api/device/register?json=%7Bdevice%3A%22" + device + "%22%2CapplicationId%3A%22JMETM%22%2CapplicationVersion%3A%221%22%2Cos%3A%22" + deviceSO + "%22%2CosVersion%3A%22" + deviceVersion + "%22%2Cmodel%3A%22" + deviceModel + "%22%7D";
+	var url = "http://diproach.cloudapp.net/api/device/register?json=%7Bdevice%3A%22" + device + "%22%2CapplicationId%3A%22JMETM%22%2CapplicationVersion%3A%228%22%2Cos%3A%22" + deviceSO + "%22%2CosVersion%3A%22" + deviceVersion + "%22%2Cmodel%3A%22" + deviceModel + "%22%7D";
 	
 	
 	$.getJSON(url, function(result) {

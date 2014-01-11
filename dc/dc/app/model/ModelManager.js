@@ -68,7 +68,7 @@ window.ModelManager = {
 			items: [
 			{
 				"type":"hotel",
-				"name":"Hotel Jesús María",
+				"name":"Hotel Jes\u00FAs Mar\u00EDa",
 				"id":1,
 				"hotelType":"Hotel",
 				"extendedView":"false",
@@ -80,7 +80,7 @@ window.ModelManager = {
 			},
 			{
 				"type":"hotel",
-				"name":"Hotel La Cabaña",
+				"name":"Hotel La Caba\u00F1a",
 				"id":2,
 				"hotelType":"Hotel",
 				"extendedView":"false",
@@ -92,13 +92,13 @@ window.ModelManager = {
 			},
 			{
 				"type":"hotel",
-				"name":"Hotel Napoleón",
+				"name":"Hotel Napole\u00F3n",
 				"id":3,
 				"hotelType":"Hotel",
 				"extendedView":"false",
 				"listItemViewType":"extended",
 				"labelName":"\u2605 \u2605 \u2605",
-				"address":"España 675",
+				"address":"Espa\u00F1a 675",
 				"phoneNumber":3525401700,
 				"email":"info@napoleononline.com.ar "
 			},
@@ -122,7 +122,7 @@ window.ModelManager = {
 				"extendedView":"false",
 				"listItemViewType":"extended",
 				"labelName":"",
-				"address":"Tucumán 660",
+				"address":"Tucum\u00E1n 660",
 				"phoneNumber":3525425502,
 				"email":""
 			},
@@ -170,7 +170,7 @@ window.ModelManager = {
 				"extendedView":"false",
 				"listItemViewType":"extended",
 				"labelName":"",
-				"address":"Av. Miguel Juárez s/n",
+				"address":"Av. Miguel Ju\u00E1rez s/n",
 				"phoneNumber":3525400207,
 				"email":""
 			},
@@ -206,13 +206,13 @@ window.ModelManager = {
 				"extendedView":"false",
 				"listItemViewType":"extended",
 				"labelName":"",
-				"address":"José Hernández s/n",
+				"address":"Jos\u00E9 Hern\u00E1ndez s/n",
 				"phoneNumber":3525461570,
 				"email":""
 			},
 			{
 				"type":"hotel",
-				"name":"Casa de Matías",
+				"name":"Casa de Mat\u00EDas",
 				"id":13,
 				"hotelType":"Camping",
 				"extendedView":"false",
